@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase.js"></script> -->
+    <title>Chatroom</title>
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        <section>
+            <h2 id="loggedUser"></h2>
+            <button class="button" onclick="logOut()">Log out</button>
+        </section>
+        <section>
+            <ul id="messages">
+                <li class="placeholder">Loading messages...</li>
+            </ul>
+        </section>
+        <section>
+            <form onsubmit="return sendMessage();">
+                <input type="text" id="message" placeholder="Enter message" autocomplete="off">
+                <input type="submit" value="Send">
+            </form>
+        </section>
+        <section>
+            <h2>Here will be some other stuff idk</h2>
+            <div class="functions">
+                <h3>Emoticons (They don't work)</h3>
+                <div class="emoticons">
+                    <div>( ͡° ͜ʖ ͡°)</div>
+                    <div>( ͠° ͟ʖ ͡°)</div>
+                    <div>( ͡o ͜ʖ ͡o)</div>
+                    <div>ಠ_ಠ</div>
+                    <div>¯\_(ツ)_/¯</div>
+                    <div>¯\_( ͡° ͜ʖ ͡°)_/¯</div>
+                    <div>◕‿◕</div>
+                    <div>ಥ_ಥ</div>
+                    <div>༼ つ ◕_◕ ༽つ</div>
+                    <div>(づ｡◕‿‿◕｡)づ</div>
+                    <div>(ง ͠° ͟ل͜ ͡°)ง</div>
+                    <div>ಠ╭╮ಠ</div>
+                    <div>/╲/\╭( ͡° ͡° ͜ʖ ͡° ͡°)╮/\╱\</div>
+                    <div>(╯°□°）╯︵ ┻━┻</div>
+                    <div>┬──┬ ノ( ゜-゜ノ)</div>
+                    <div>(⌐■_■)</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/ui/4.8.0/firebase-ui-auth.js"></script>
+<script>
+    var firebaseConfig = {
+    apiKey: "AIzaSyBl0E-vV6mRk18EmlDmH8wcG4KcgiM8G3E",
+    authDomain: "chatroom-dc0ad.firebaseapp.com",
+    databaseURL: "https://chatroom-dc0ad-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "chatroom-dc0ad",
+    storageBucket: "chatroom-dc0ad.appspot.com",
+    messagingSenderId: "189930215706",
+    appId: "1:189930215706:web:0d2b2cac15bdc39760f4a3"
+};
+firebase.initializeApp(firebaseConfig);
+</script>
+<script src="script.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+</body>
+
+</html>
