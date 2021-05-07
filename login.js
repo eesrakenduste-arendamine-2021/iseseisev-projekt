@@ -1,6 +1,7 @@
 $(function() {
   let errorMessage;
   $('.form').click(function() {
+    firebase.auth().signOut();
     let username = $('#username').val();
     const password = $('#password').val();
 
@@ -15,14 +16,15 @@ $(function() {
           errorMessage = error.message;
         });
         firebase.auth().onAuthStateChanged(function(user) {
+          document.querySelector("#loginStatus").innerHTML = "Logging in...";
           if (user) {
-            document.querySelector("#loginStatus").innerHTML = "Logging in...";
+            document.querySelector("#loginStatus").innerHTML = "Success";
             setTimeout(() => {
               window.location = "main.html";
             }, 500);
           } else {
             setTimeout(() => {
-              document.querySelector("#loginStatus").innerHTML ="Invalid username or password";
+              changeLoginStatus("Invalid username or password");
             }, 1500);
           }
         });
@@ -43,11 +45,13 @@ $(function() {
         if(!password.length > 25 || password.length < 8) {
           document.querySelector("#registerStatus").innerHTML = "Password must be between 8 to 25 characters!";
         } else {
-          username += "@chat.com";
-          firebase.auth().createUserWithEmailAndPassword(username, password)
-          .then((user) => {
+          let email = username + "@chat.com";
+          firebase.auth().createUserWithEmailAndPassword(email, password)
+          .then((res) => {
+            const user = firebase.auth().currentUser;
             switchForms();
-            document.querySelector("#loginStatus").innerHTML = `Welcome, ${user.email.replace("@chat.com","")}. You may now log in`;
+            document.querySelector("#loginStatus").innerHTML = `Welcome, ${username}. You may now log in`;
+            return user.updateProfile({displayName: username});
           })
           .catch((error) => {
             if (error.code == "auth/email-already-in-use") {
@@ -67,19 +71,24 @@ $(function() {
     return filter.test(username)
   }
 
+  function changeLoginStatus(message) {
+    document.querySelector("#loginStatus").innerHTML = message;
+    setTimeout(() => {
+      document.querySelector("#loginStatus").innerHTML ="";
+    }, 3000);
+  }
+
   let loginForm = true;
   $("#registerMessage").on("click", switchForms);
 
   function switchForms() {
     if (loginForm == true) {
-      console.log("AA");
       document.querySelector(".login").classList.add('hidden');
       document.querySelector(".register").classList.remove('hidden');
       document.querySelector("#registerMessage").innerHTML = "Log in instead";
       document.querySelector("#formMessage").innerHTML = "Register";
       loginForm = false;
     } else {
-      console.log("BB");
       document.querySelector(".register").classList.add('hidden');
       document.querySelector(".login").classList.remove('hidden');
       document.querySelector("#registerMessage").innerHTML = "Register now";

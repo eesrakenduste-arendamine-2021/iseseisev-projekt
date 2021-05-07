@@ -6,6 +6,7 @@
     <meta name="description" content="">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/6377da5ebe.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <!-- <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase.js"></script> -->
@@ -17,7 +18,10 @@
     <main>
         <section>
             <h2 id="loggedUser"></h2>
-            <button class="button" onclick="logOut()">Log out</button>
+            <div class="nav">
+                <button class="button" onclick="logOut()">Log out</button>
+                <button class="button" onclick="goToRepo()">GitHub</button>
+            </div>
         </section>
         <section>
             <ul id="messages">
@@ -29,11 +33,11 @@
                 <input type="text" id="message" placeholder="Enter message" autocomplete="off">
                 <input type="submit" value="Send">
             </form>
+            <div class="hidden" id="errorMessage"></div>
         </section>
         <section>
-            <h2>Here will be some other stuff idk</h2>
             <div class="functions">
-                <h3>Emoticons (They don't work)</h3>
+                <h3>Emoticons</h3>
                 <div class="emoticons">
                     <div>( ͡° ͜ʖ ͡°)</div>
                     <div>( ͠° ͟ʖ ͡°)</div>
