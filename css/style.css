@@ -1,0 +1,108 @@
+body{
+	font-family: 'Varela Round', sans-serif;
+}
+
+.openPage {
+    text-align: center;   
+}
+.quizPage {
+    text-align: center;   
+}
+.container {
+  text-align: center; 
+}
+.container h3 {
+  font-size: 35px; 
+}
+.container h1 {
+  font-size: 50px;
+  background-color: rgb(240, 161, 59);
+  padding: auto;
+  margin-left: 20%;
+  margin-right: 20%;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.container h2 {
+  font-size: 35px;
+}
+
+.selection {
+    text-align: center;    
+}
+button{
+  border: 1px solid rgb(0, 0, 0);
+  font-size: 50px;
+  padding: 5px;
+  margin: 15px;
+  border-radius: 10px
+}
+button:hover{
+  cursor: pointer;
+  background-color: gray;
+}
+.info{
+  font-size: 25px;
+}
+#tieScore{
+  font-size: 25px;
+}
+.showcomputer{
+  font-size: 25px;
+}
+.show{
+
+  font-size: 25px;
+}
+
+.sidebar {
+    font-family: 'Varela Round', sans-serif;
+    height: 100%;
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    background-color: #050051; 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+  }
+  
+  .sidebar a {
+    font-family: 'Varela Round', sans-serif;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.5s;
+  }
+  
+  .sidebar a:hover {
+    color: #7b7b7b;
+  }
+  
+  #menu-toggle{
+    text-align: left;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  #menu-toggle:hover{
+    background-color: #444;
+  }
+  
+  #main {
+    transition: margin-left .5s; 
+    padding: 20px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
