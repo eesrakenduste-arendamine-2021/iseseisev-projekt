@@ -1,0 +1,316 @@
+body {
+    background: rgb(27,16,34);
+    background: linear-gradient(135deg, rgba(27,16,34,1) 12%, rgba(19,21,41,1) 88%);
+    color: rgb(183, 175, 202);
+    font-family: 'Roboto', sans-serif;
+    margin: 0 10%;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: rgba(241, 222, 252,0.05);
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+
+section:first-of-type {
+    padding: 0 10px;
+}
+
+section ul {
+    padding: 0;
+}
+
+section li {
+    padding: 15px 10px;
+    margin: 6px 0;
+    margin-right: 5px;
+    border-radius: 3px;
+    list-style-type: none;
+    color: rgb(183, 175, 202);
+    background-color: rgba(218, 203, 253, 0.3);
+}
+section li:nth-of-type(2n) {
+    color: rgb(183, 175, 202);
+    background-color: rgba(194, 175, 248, 0.3);
+
+}
+
+section ul {
+    border-radius: 3px;
+}
+
+.smallFont {
+    font-size: 12px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.iconbtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconbtn i {
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.iconbtn p {
+    margin: 0;
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap:10px;
+}
+
+.deleteBtn {
+    background-color: rgb(243, 229, 243);
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    color:rgb(88, 66, 100);
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+    height: 38px;
+    margin-left: 10px;
+}
+
+.functions h3 {
+    text-align: center;
+}
+
+.deleteBtn:hover {
+    background-color: rgb(183, 175, 202);
+}
+
+form {
+    display: flex;
+    justify-content: space-around;
+}
+
+input[type="submit"] {
+    background-color: rgb(145, 125, 177);
+    font-weight: bold;
+    border: none;
+    color:rgb(65, 47, 75);
+    outline: none;
+    padding: 10px 15px;
+    min-width: 200px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(227, 213, 248);
+}
+
+.formContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    /* background-color: rgba(241, 222, 252,0.05); */
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.login, .register {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    width: 25%;
+}
+
+#loginStatus, #registerStatus {
+    text-align: center;
+}
+
+.button {
+    background-color: rgb(145, 125, 177);
+    font-weight: bold;
+    border: none;
+    color:rgb(65, 47, 75);
+    outline: none;
+    padding: 10px 15px;
+    min-width: 200px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: rgb(227, 213, 248);
+}
+
+#registerMessage:hover {
+    border-bottom: 2px solid rgb(145, 125, 177);
+    cursor: pointer;
+}
+
+input[type="text"]:hover {
+    background-color: rgba(193, 169, 248, 0.39);
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+input[type="text"] {
+    background-color: rgba(235, 228, 252, 0.3);
+    color: rgb(183, 175, 202);
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+}
+
+input[type="password"]:hover {
+    background-color: rgba(193, 169, 248, 0.39);
+}
+
+input[type="password"]:focus {
+    outline: none;
+}
+
+input[type="password"] {
+    background-color: rgba(235, 228, 252, 0.3);
+    color: rgb(183, 175, 202);
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+}
+
+::placeholder {
+    color: rgba(183, 175, 202, 0.37);
+}
+
+.hidden {
+    display: none;
+}
+
+#messages {
+    height: 600px;
+    max-height: 600px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.message {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+.emoticons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+.emoticons div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid rgba(183, 175, 202, 0.151);
+    width: 15vw;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 3px;
+    background-color: rgba(218, 203, 253, 0.3);
+    cursor: pointer;
+    /* min-width: 20vw; */
+    font-size: 20px;
+    width: 100%;
+}
+
+#errorMessage {
+    padding: 15px 0;
+    text-align: center;
+}
+
+#loggedUser {
+    text-align: center;
+}
+
+.emoticons div:nth-of-type(2n) {
+    background-color: rgba(194, 175, 248, 0.3);
+}
+
+.emoticons div:hover {
+    background-color: rgb(88, 66, 100);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    margin-left: 2px;
+}
+
+  /* Track */
+::-webkit-scrollbar-track {
+    background-color: rgba(241, 222, 252,0.05)
+}
+
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: rgba(241, 222, 252,0.5);
+}
+
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(241, 222, 252,0.9);
+}
+
+@media only screen and (max-width: 800px) {
+    input[type="submit"] {
+        min-width: 100px;
+    }
+    body {
+        margin: 0 1%;
+    }
+    .emoticons div {
+        font-size: 14px;
+        padding: 5px 1px;
+    }
+}
+
+@media only screen and (max-width: 665px) {
+    .emoticons {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .nav {
+        flex-direction: column;
+    }
+}
