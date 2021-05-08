@@ -1,39 +1,38 @@
 # iseseisev-projekt
 
-**NB! Kui meeskonnas on rohkem kui üks liige, siis peab githubis selgelt välja tulema, kes millist osa tegi, et oleks võimalik hinnata iga meeskonnaliikme individuaalset panust.**
+ [http://www.tlu.ee/~hm4543/Projekt/index.html](http://www.tlu.ee/~hm4543/Projekt/index.html)
 
-# This is an <h1> tag
-## This is an <h2> tag
+# Veebilehe raamistik, kus on sees kaks mängu Kivi-Paber-Käärid ja Quiz
+
+## Autorid:
+### Hans-Märten Liiu
+### Jan-Erik Läänesaar
+
 README.md fail sisaldab:
 1. suurelt rakenduse nime;
 1. autorite nimesid;
 1. rakenduse funktsionaalsuse kirjeldust;
 1. ekraanitõmmist rakendusest.
 
-Rakenduse puhul peavad olema täidetud vähemalt järgmised nõuded:
-  * rakendus lahendab tõsist probleemi või on meelelahutusliku eesmärgiga; 
-  * rakenduse idee peab olema kooskõlastatud õppejõuga;
-  * responsive disain (kui tegemist pole ainult desktopile mõeldud mänguga);
-  * rakenduse javascripti osa on vähemalt 200 rida koodi ja koodi kordused peavad olema minimeeritud;
-  
-Teema ettepanekud:
- * Kuldvillak
- * Filmiinfo rakendus kasutades moviedatabase api-t - saab otsida filme, seriaale ja teha list enda vaadatud filmidest jne. 
- * Raamaturiiuli rakendus - Saab sisestada kodus olevad raamatud, märkida millised on loetud ja millised on pooleli. Moodustada lugemiseks eraldi liste ning märkida, mis leheküljel on raamat hetkel pooleli.
- * 
+Rakenduse funktsionaalne kirjeldus:
+1. Avalehel on kirjas tiimi nimi, ning taustal mängib ilus merevaade
+1. Igalt leheküljelt on võimalik menüü kaudu liikuda teistele lehekülgedele
+1. Menüüd saab nupuga avada ja sulgeda
+1. Veebilehe raamistik on mõeldud meelelahutuslikul eesmärgil, seega veebileht sisaldab Kivi-Paber-Käärid mängu.
+1. Kivi-Paber-Käärid mäng loeb scoori(seal hulgas ka viike).
+1. Kivi-Paber-Käärid käigu tegemine on interaktiivne.
+1. Käigule vastavalt uuendatakse tulemust, mis resetib, kui leht refreshida.
+1. Käigu võitmise/kaotuse/viigi kohaselt uuendatakse ka parasjagu välja käidud nii arvuti kui ka kasutaja poolt käik värviliselt.
+1. võitja käsi on roheline, kaotaja roosa ja viik on sinine.
+1. Leheküljel on ka olemas tiimileht, kus on lühitutvustus ja pilt meist endist.
 
-Rakenduses võib kasutada teiste autorite koodi, aga see peab olema viidatud. Üle 50% koodist (javascript ja CSS) peab olema enda kirjutatud. Kasutada võib erinevaid API-sid ja võib kasutada erinevaid javascripti teeke (library).
-
-# Esitlus
-* Igale grupile on aega 15 minutit (6 minutit rakenduse esitlus, 6 minutit koodi esitlus, 3 minutit küsimused)
-* Esitama peavad grupiliikmed ühisel ajal. 
-
-# Autor: Hans-Märten Liiu
- [http://www.tlu.ee/~hm4543/Projekt/index.html](http://www.tlu.ee/~hm4543/Projekt/index.html)
+Töö jaotus:
+Hans: Avaleht ja kivipaberkäärid(JS täielikult ise kirjutatud) ja tiimileht
+Jan: Quiz ja Menüü
 
 ## Kuvatõmmised
-![Source code](screenshots/pilt.png)
-![Source code](screenshots/pilt2.png)
+![Source code](screenshots/pilt.jpg)
+![Source code](screenshots/pilt2.jpg)
 ![Source code](screenshots/pilt3.png)
 ![Source code](screenshots/pilt4.png)
 ![Source code](screenshots/pilt5.png)
