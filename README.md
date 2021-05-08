@@ -3,9 +3,9 @@
 ### Autor: Markus Tammeoja
 
 ### Eesmärk
-Eesmärk oli koostada anonüümse chatroomi, kus kasutajatel on võimalik üksteisega jutu ajada. Soov oli paigutada seda lin2 võrku, kus pole tunnelit vaja.
+Eesmärk oli koostada anonüümse chatroomi, kus on võimalik üksteisega jutu ajada. Soov oli paigutada seda lin2 võrku, kus pole tunnelit tarvis.
 
-Selle lahenduseks võib kasutada Google Firebase, mis lubab rakenduse ehitamist mõnel määral ilma serverita - jututuba on hea näide selle rakendamises.
+Selle lahenduseks võib kasutada Google Firebase, mis lubab rakenduse ehitamist mõnel määral ilma serverita - jututuba on hea näide Firebase rakendamiseks.
 
 ### Live link
 
