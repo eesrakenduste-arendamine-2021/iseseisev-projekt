@@ -25,6 +25,8 @@ Selle lahenduseks võib kasutada Google Firebase, mis lubab rakenduse ehitamist 
 - Sõnumite saatmine
 - Sõnumite kustutamine
 - Emoticonide lisamine chatti
+- Auto-scroll
+- Responsive
 
 ### Pildid
 
