@@ -6,7 +6,9 @@
 
 ## Autorid:
 ### Hans-Märten Liiu
+#### Avaleht ja kivipaberkäärid(JS täielikult ise kirjutatud) ja tiimileht
 ### Jan-Erik Läänesaar
+#### Quiz ja Menüü
 
 README.md fail sisaldab:
 1. suurelt rakenduse nime;
@@ -26,9 +28,6 @@ Rakenduse funktsionaalne kirjeldus:
 1. võitja käsi on roheline, kaotaja roosa ja viik on sinine.
 1. Leheküljel on ka olemas tiimileht, kus on lühitutvustus ja pilt meist endist.
 
-Töö jaotus:
-Hans: Avaleht ja kivipaberkäärid(JS täielikult ise kirjutatud) ja tiimileht
-Jan: Quiz ja Menüü
 
 ## Kuvatõmmised
 ![Source code](screenshots/pilt.jpg)
