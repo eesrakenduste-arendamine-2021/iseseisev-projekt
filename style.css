@@ -57,6 +57,22 @@ section ul {
     margin-bottom: 5px;
 }
 
+.iconbtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconbtn i {
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.iconbtn p {
+    margin: 0;
+}
+
 .nav {
     display: flex;
     width: 100%;
