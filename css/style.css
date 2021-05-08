@@ -5,6 +5,16 @@ body{
 .openPage {
     text-align: center;   
 }
+.openPage h1 {
+  text-align: center;   
+  z-index: 1000;
+  font-size: 70px;
+  position: fixed;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+}
 .quizPage {
     text-align: center;   
 }
@@ -15,7 +25,7 @@ body{
   font-size: 35px; 
 }
 .container h1 {
-  font-size: 50px;
+  font-size: 40px;
   background-color: rgb(240, 161, 59);
   padding: auto;
   margin-left: 20%;
@@ -24,7 +34,7 @@ body{
   border-radius: 10px;
 }
 .container h2 {
-  font-size: 35px;
+  font-size: 25px;
 }
 
 .selection {
@@ -32,7 +42,7 @@ body{
 }
 button{
   border: 1px solid rgb(0, 0, 0);
-  font-size: 50px;
+  font-size: 40px;
   padding: 5px;
   margin: 15px;
   border-radius: 10px
@@ -42,17 +52,31 @@ button:hover{
   background-color: gray;
 }
 .info{
-  font-size: 25px;
+  font-size: 15px;
 }
 #tieScore{
-  font-size: 25px;
+  font-size: 15px;
 }
 .showcomputer{
-  font-size: 25px;
+  font-size: 15px;
 }
 .show{
 
-  font-size: 25px;
+  font-size: 15px;
+}
+#computerchoice{
+  border: 1px solid rgb(0, 0, 0);
+  font-size: 35px;
+  padding: 5px;
+  margin: 15px;
+  border-radius: 10px
+}
+#playerchoice{
+  border: 1px solid rgb(0, 0, 0);
+  font-size: 35px;
+  padding: 5px;
+  margin: 15px;
+  border-radius: 10px
 }
 
 .sidebar {
@@ -100,9 +124,43 @@ button:hover{
   #main {
     transition: margin-left .5s; 
     padding: 20px;
+    z-index: 1000;
   }
   
   @media screen and (max-height: 450px) {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
   }
+
+  #videoke {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    z-index: -9999999;
+  }
+#pildike{
+  position: absolute;
+  right: 1%;
+  bottom: 0;
+  max-width: 50%;
+  height: 10%;
+}
+#copyrightclaim{
+  position: fixed;
+  left: 50%;
+  bottom: 20px;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+}
+#sentence{
+  position: fixed;
+  left: 50%;
+  bottom: 25%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  font-size: 35px;
+}

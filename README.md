@@ -1,32 +1,9 @@
 # iseseisev-projekt
 
-Tähtaeg - 1 päev enne esitlust. Esitluse kuupäevadeks: 1 nädal peale ÕISis valitud arvestuse kuupäeva (v.a arvatud järelarvestus, mis toimub õigel kuupäeval) - kindlasti tuleb arvestusele registreerida. Projektide esitlemine toimub:
-1. 14.05.2021 kell 10:15-12:15 zoomis
-Topic: Eesrakenduste arendamine arvestus
-Time: May 14, 2021 10:15 AM Helsinki
-
-Join Zoom Meeting
-https://us02web.zoom.us/j/84123937523?pwd=cDJSNVFhS1QxTmJIMko3blEvKzg0UT09
-
-Meeting ID: 841 2393 7523
-Passcode: 828751
-
-**Projektide lõpptähtaeg: 21.05.2021 - kogu kood pull requestina esitatud.**
-
-3. Järelarvestus - 04.06.2021 kell 10:15-11:45
-
-
-
-Eesrakenduste arendamise iseseisva projekti lähteülesanne. 
-
-Töö võib teha teha 1-4 liikmelise meeskonnana. Punkte jaotatakse vastavalt sellele, mitu liiget on meeskonnas:
-* 1 liige - max 70 punkti/inimene.
-* 2 liiget - max 40 punkti/inimene.
-* 3 liiget - max 30 punkti/inimene.
-* 4 liiget - max 20 punkti/inimene.
-
 **NB! Kui meeskonnas on rohkem kui üks liige, siis peab githubis selgelt välja tulema, kes millist osa tegi, et oleks võimalik hinnata iga meeskonnaliikme individuaalset panust.**
 
+# This is an <h1> tag
+## This is an <h2> tag
 README.md fail sisaldab:
 1. suurelt rakenduse nime;
 1. autorite nimesid;
@@ -50,3 +27,15 @@ Rakenduses võib kasutada teiste autorite koodi, aga see peab olema viidatud. Ü
 # Esitlus
 * Igale grupile on aega 15 minutit (6 minutit rakenduse esitlus, 6 minutit koodi esitlus, 3 minutit küsimused)
 * Esitama peavad grupiliikmed ühisel ajal. 
+
+# Autor: Hans-Märten Liiu
+ [http://www.tlu.ee/~hm4543/Projekt/index.html](http://www.tlu.ee/~hm4543/Projekt/index.html)
+
+## Kuvatõmmised
+![Source code](screenshots/pilt.png)
+![Source code](screenshots/pilt2.png)
+![Source code](screenshots/pilt3.png)
+![Source code](screenshots/pilt4.png)
+![Source code](screenshots/pilt5.png)
+![Source code](screenshots/pilt6.png)
+![Source code](screenshots/pilt7.png)
