@@ -7,11 +7,12 @@
 ## Autorid:
 ### Hans-Märten Liiu
 #### Avaleht ja kivipaberkäärid(JS täielikult ise kirjutatud) ja tiimileht
+##
 ### Jan-Erik Läänesaar
 #### Quiz ja Menüü
 
 
-
+##
 
 Rakenduse funktsionaalne kirjeldus:
 1. Avalehel on kirjas tiimi nimi, ning taustal mängib ilus merevaade
