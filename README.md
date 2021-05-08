@@ -10,11 +10,8 @@
 ### Jan-Erik Läänesaar
 #### Quiz ja Menüü
 
-README.md fail sisaldab:
-1. suurelt rakenduse nime;
-1. autorite nimesid;
-1. rakenduse funktsionaalsuse kirjeldust;
-1. ekraanitõmmist rakendusest.
+
+
 
 Rakenduse funktsionaalne kirjeldus:
 1. Avalehel on kirjas tiimi nimi, ning taustal mängib ilus merevaade
