@@ -51,6 +51,3 @@ Rakenduse funktsionaalne kirjeldus:
 ![Source code](screenshots/Screenshot_6.png)
 ![Source code](screenshots/Screenshot_7.png)
 ![Source code](screenshots/Screenshot_8.png)
-
-## Külg menüü kuvatõmmis
-![Source code](screenshots/Screenshot_9.png)
