@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/e391ce7786.js" crossorigin="anonymous"></script>
+
+	<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"> 
+    <script src="js/script.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <title>Kivi-Paber-Käärid</title>
+</head>
+<body>
+    <div id="mySidebar" class="sidebar">
+        <a href="index.html">Avaleht</a>
+        <a href="kivipaber.html">Kivi-Paber-Käärid</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="tiimileht.html">Tiimist</a>
+        <a href="https://github.com/hansm4543/iseseisev-projekt">Github</a>
+      </div>
+      <div id="main">
+        <button id="menu-toggle">Ava menüü</button>
+    <div class="container">
+        <h1>Rock Paper Scissors</h1>
+<!--   Playeri asjad     -->
+        <div class="section">
+            <div class="info">
+                <h3>You :</h3><p id="playerScore" type="number">0</p>
+            </div>
+            <div class="show">
+                <div hidden id="playerchoice"></div>
+            </div>
+        </div>
+        
+<!--   computer asjad     -->
+        <div class="section">
+            <div class="info">
+                <h3>Computer :</h3><p id="computerScore" type="number">0</p>
+            </div>
+            <div class="showcomputer">
+                <div hidden id="computerchoice"></div>
+            </div>
+        </div>
+        <!--   Viik     -->
+        <h3>Viike :</h3><p id="tieScore" type="number">0</p>
+        <h2 style="color: rgb(0, 132, 255);" id="demo2">Valige oma käsi!</h2>
+    </div>
+
+    <!-- Valik   -->
+    <div class="selection">
+        <button class="fas fa-hand-rock" id="rock" onclick="k2ik('kivi')"></button>
+        <button class="fas fa-hand-paper" id="paper" onclick="k2ik('paper')"></button>
+        <button class="fas fa-hand-scissors" id="scissors" onclick="k2ik('k22rid')"></button>
+    </div>
+</div>
+</body>
+</html>
