@@ -8,7 +8,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"> 
     <script src="js/menu.js" defer></script>
+    <script src="js/quiz.js" defer></script>
     <title>Quiz</title>
+	</head>
+	<body>
     <div id="mySidebar" class="sidebar">
         <a href="index.html">Avaleht</a>
         <a href="kivipaber.html">Kivi-Paber-Käärid</a>
@@ -18,13 +21,92 @@
     </div>
     <div id="main">
         <button id="menu-toggle">Ava menüü</button>
-        <div class="quizPage"><h1>Avaleht</h1>
-            <div id="quiz"></div>
-            <button id="submit">Submit Quiz</button>
-            <div id="results"></div>
+		 <div id="title">
+		<h1>Teadmiste kontroll</h1>
+		<br>
+		<br>
+		</div>
+        <form name="quiz" id="quiz">
+            <div>
+                <h3>1. Milline on viies planeet päiksesüsteemis?</h3>
+                <p><input type="radio" name="qu1" value="Marss"> A. Marss</p>
+                <p><input type="radio" name="qu1" value="Saturn"> B. Saturn</p>
+                <p><input type="radio" name="qu1" value="Jupiter"> C. Jupiter</p>
             </div>
+			<br>
+            <div>
+                <h3>2. Mis aastal sai Eesti riik iseseisvaks?</h3>
+                <p><input type="radio" name="qu2" value="1918"> A. 1918</p>
+                <p><input type="radio" name="qu2" value="1919"> B. 1919</p>
+                <p><input type="radio" name="qu2" value="1991"> C. 1991</p>
+            </div>
+			<br>
+            <div>
+                <h3>3. Mis on Ameerika Ühendriikide pealinn?</h3>
+                <p><input type="radio" name="qu3" value="NewYork"> A. New York</p>
+                <p><input type="radio" name="qu3" value="Washington"> B. Washington</p>
+                <p><input type="radio" name="qu3" value="Toronto"> C. Toronto</p>
+            </div>
+			<br>
+            <div>
+                <h3>4. Mis juhtub veega, kui see külma korral jäätub?</h3>
+                <p><input type="radio" name="qu4" value="Paisub"> A. Paisub</p>
+                <p><input type="radio" name="qu4" value="Kahaneb"> B. Tõmbub kokku</p>
+                <p><input type="radio" name="qu4" value="Midagi"> C. Mitte ükski ülalpool mainitust</p>
+            </div>
+			<br>
+            <div>
+                <h3>5. Kes leiutas esimese revolvri?</h3>
+                <p><input type="radio" name="qu5" value="Remington"> A. Eliphalet Remington</p>
+                <p><input type="radio" name="qu5" value="Colt"> B. Samuel Colt</p>
+                <p><input type="radio" name="qu5" value="Winchester"> C. Oliver Winchester</p>
+            </div>
+			<br>
+            <div>
+                <h3>6. Kes on hetkel maailma rikkaim isik?</h3>
+                <p><input type="radio" name="qu6" value="Musk"> A. Elon Musk</p>
+                <p><input type="radio" name="qu6" value="Gates"> B. Bill Gates</p>
+                <p><input type="radio" name="qu6" value="Bezos"> C. Jeff Bezos </p>
+            </div>
+			<br>
+            <div>
+                <h3>7. Milline on euroopa väikseim riik?</h3>
+                <p><input type="radio" name="qu7" value="Lic"> A. Licechtenstein</p>
+                <p><input type="radio" name="qu7" value="Vat"> B. Vatikan</p>
+                <p><input type="radio" name="qu7" value="San"> C. San Marino</p>
+            </div>
+			<br>
+            <div> 
+                <h3>8. Millal leiab aset Jaanipäev?</h3>
+                <p><input type="radio" name="qu8" value="23"> A. 23.Juuni</p>
+                <p><input type="radio" name="qu8" value="24"> B. 24.Juuli</p>
+                <p><input type="radio" name="qu8" value="24j"> C. 24.Juuni</p>
+            </div>
+			<br> 
+            <div>
+                <h3>9. Mis aastal liitus Eesti Euroopa Liiduga?</h3>
+                <p><input type="radio" name="qu9" value="2003"> A. 2003</p>
+                <p><input type="radio" name="qu9" value="2010"> B. 2010</p>
+                <p><input type="radio" name="qu9" value="2004"> C. 2004</p>
+            </div> 
+			<br>
+            <div>
+                <h3>10. Kes kirjutas raamatu "Kevade"?</h3>
+                <p><input type="radio" name="qu10" value="Luts"> A. Oskar Luts</p>
+                <p><input type="radio" name="qu10" value="Tammsaare"> B. A.H Tammsaare</p>
+                <p><input type="radio" name="qu10" value="Päts"> C. Konstantin Päts</p>
+            </div>
+			<br>
+			<br>
+            <input type="button" name="submit" value="Lõpeta Test" onclick="check(); window.location.href='#' "></input>
+        </form> 
+		<div id="end" style="visibility:hidden">
+        <p id="result"></p>
+		<br> 
+		<br>
+		<br>
+		<input type="button" name="restart" value="Alusta uuesti" onClick="window.location.reload(true); window.location.href='#' "></input>
+		</div>
     </div>
-    </head>
-    <body>
-    </body>
+   </body>
 </html>
