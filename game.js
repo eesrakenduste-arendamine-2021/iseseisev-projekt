@@ -1,5 +1,6 @@
 const container = document.getElementById("container");
 let startBtn = document.getElementById('start_btn');
+let movesBtn = document.getElementById('moves');
 const container_w = container.clientWidth;
 const container_h = container.clientWidth;
 const r_max = 3;
@@ -14,6 +15,7 @@ let pieces = [];
 let empty_piece = null;
 let x_pos = null; let y_pos = null;
 let _isMoving = false;
+let move_count = 0;
 
 startBtn.addEventListener('click', start);
 document.getElementById("msg").innerHTML = "Press start to begin!";
@@ -22,6 +24,8 @@ init();
 function start(){
   document.getElementById("msg").innerHTML = "Click on pieces to move them. Good luck! Try hard! I believe in you!";
   startBtn.innerHTML = 'Restart';
+  move_count = 0;
+  movesBtn.innerHTML = "Moves: 0";
 
   for(let i = 0; i < r_max; i++){
     for(let j = 0; j < col_max; j++){
@@ -98,6 +102,10 @@ if(_isMoving){
 
 _isMoving = true;
 
+movesBtn.innerHTML = "Moves: 0";
+move_count ++;
+movesBtn.innerHTML = "Moves: " + move_count;
+
 let new_x = this.offsetLeft + (emptypiece_curx_pos - cur_piecex_pos) * piece_w;
 let new_y = this.offsetTop + (emptypiece_cury_pos - cur_piecey_pos) * piece_h;
 
@@ -141,7 +149,7 @@ if(won){
 }
 
 function congratulations() {
-  document.getElementById("msg").innerHTML = "You won! Good job, congratulations!";
+  document.getElementById("msg").innerHTML = "You won! Congratulations! You made it in " + move_count + " moves";
   pieces.forEach((row) =>{
     row.forEach((piece) =>{
       piece.removeEventListener('click', move);
