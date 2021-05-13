@@ -1,63 +1,65 @@
-var em;
-var pwd;
-
 chrome.runtime.onMessage.addListener(
     function(request) {
-        if (request.method == "changePage") {
-            var fname = fnamegen();
+        if (request.method == "rautofill") {
+
+            var fname = faker.name.firstName();
+            var lname = faker.name.lastName();
             var password = pwdgen();
 
             $('input').each(
                 function() {
                     var input = $(this);
 
-                    try {
-                        if (input.attr('name').indexOf('name') >= 0) { input.val(fname); }
-                    } catch (e) {
-                        //
-                    }
-                    try {
-                        if (input.attr('name').indexOf('nimi') >= 0) { input.val(fname); }
-                    } catch (e) {
-                        //
-                    }
-                    try {
-                        if (input.attr('placeholder').indexOf('name') >= 0) { input.val(fname); }
-                    } catch (e) {
-                        //
-                    }
-                    try {
-                        if (input.attr('placeholder').indexOf('nimi') >= 0) { input.val(fname); }
-                    } catch (e) {
-                        //
+
+                    if (input.attr('type') == 'text') {
+                        input.val(fname + lname);
                     }
 
                     if (input.attr('type') == 'email') {
-                        input.val(fname + "@gmailnator.com");
+                        input.val(fname + lname + "@gmailnator.com");
                     }
                     if (input.attr('type') == 'password') {
-                        $("label[for*='password']").html(password);
+                        input.after('<a>' + password + '</a>');
                         input.val(password);
                     }
                 }
             );
-            var emailURL = "https://www.gmailnator.com/inbox/#" + fname + "@gmailnator.com";
+            var emailURL = "https://www.gmailnator.com/inbox/#" + fname + lname + "@gmailnator.com";
             window.open(emailURL);
         }
-    }
-);
+
+        if (request.method == "sautofill") {
 
 
-function fnamegen() {
-    var fnameresult = [];
-    var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
-    for (var i = 0; i < 10; i++) {
-        fnameresult.push(characters.charAt(Math.floor(Math.random() *
-            characters.length)));
-    }
-    fnameresult = fnameresult.join('');
-    return fnameresult;
-}
+            var email = '';
+            var name = '';
+            chrome.storage.local.get(['name', 'email'], (data) => {
+                console.log(data.name);
+                console.log(data.email);
+            });
+
+            var password = pwdgen();
+
+            $('input').each(
+                function() {
+                    var input = $(this);
+
+
+                    if (input.attr('type') == 'text') {
+                        input.val(name);
+                    }
+
+                    if (input.attr('type') == 'email') {
+                        input.val(email);
+                    }
+                    if (input.attr('type') == 'password') {
+                        input.after('<a>' + password + '</a>');
+                        input.val(password);
+                    }
+                }
+            );
+        }
+    });
 
 
 
