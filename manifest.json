@@ -3,19 +3,19 @@
 
     "name": "Joll",
     "description": "Joller",
-    "version": "1.0",
+    "version": "0.0.1",
 
     "browser_action": {
         "default_icon": "e.png",
         "default_popup": "popup.html"
     },
-    "background": {
-        "scripts": ["background.js"],
-        "persistent": false
-    },
     "permissions": [
         "tabs",
-        "webNavigation"
+        "webNavigation",
+        "file:///*/"
+    ],
+    "web_accessible_resources": [
+        "text/fname.txt"
     ],
     "content_scripts": [{
         "matches": [

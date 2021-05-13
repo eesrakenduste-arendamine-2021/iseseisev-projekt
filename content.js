@@ -3,7 +3,8 @@ var pwd;
 
 chrome.runtime.onMessage.addListener(
     function(request) {
-        if (request.method == "changePage") {
+        if (request.method == "rautofill") {
+            
             var fname = fnamegen();
             var password = pwdgen();
 
@@ -36,7 +37,7 @@ chrome.runtime.onMessage.addListener(
                         input.val(fname + "@gmailnator.com");
                     }
                     if (input.attr('type') == 'password') {
-                        $("label[for*='password']").html(password);
+                        input.after('<a>'+ password +'</a>');
                         input.val(password);
                     }
                 }
@@ -48,17 +49,24 @@ chrome.runtime.onMessage.addListener(
 );
 
 
-function fnamegen() {
-    var fnameresult = [];
-    var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
-    for (var i = 0; i < 10; i++) {
-        fnameresult.push(characters.charAt(Math.floor(Math.random() *
-            characters.length)));
-    }
-    fnameresult = fnameresult.join('');
-    return fnameresult;
-}
+// function fnamegen() {
+//     const fnameslink = chrome.runtime.getURL("/text/fname.txt");
+    
+//     $.get(fnameslink, (data) => {
+//         const fnamelist = data.split('\n');
+//         const randomName = Math.floor((Math.random() * 3519) + 0);
+//         test(fnamelist[randomName]);
+//     });
+//     // console.log(rfname);
+//     // return rfname; 
+// }
 
+// function test(t){
+//     var fname;
+//     fname = t;
+//     console.log(t);
+//     return fname;
+// }
 
 
 function pwdgen() {
