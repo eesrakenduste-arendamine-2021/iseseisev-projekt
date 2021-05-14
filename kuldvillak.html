@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Kuldvillak</title>
+</head>
+<body>
+    <h1 class="pagename">Kuldvillak</h1>
+    <form class="vorm" name="vorm">
+        <input class="value" type="text" placeholder="Muuda küsimust" name="txt" readonly="">
+        <span class="num quest" data-target="simpleModal_q1" data-toggle="modal" id="q1">Matemaatika</span>
+        <span class="num quest" data-target="simpleModal_q2" data-toggle="modal" id="q2">Ajalugu</span>
+        <span class="num quest" data-target="simpleModal_q3" data-toggle="modal" id="q3">Seriaalid</span>
+        <span class="num quest" data-target="simpleModal_q4" data-toggle="modal" id="q4">Riigid</span>
+        <span class="num quest" data-target="simpleModal_q5" data-toggle="modal" id="q5">Firmad</span>
+
+        <span data-target="simpleModal_1" data-toggle="modal">100</span>
+        <span data-target="simpleModal_2" data-toggle="modal">100</span>
+        <span data-target="simpleModal_3" data-toggle="modal">100</span>
+        <span data-target="simpleModal_4" data-toggle="modal">100</span>
+        <span data-target="simpleModal_5" data-toggle="modal">100</span>
+        <span data-target="simpleModal_6" data-toggle="modal">200</span>
+        <span data-target="simpleModal_7" data-toggle="modal">200</span>
+        <span data-target="simpleModal_8" data-toggle="modal">200</span>
+        <span data-target="simpleModal_9" data-toggle="modal">200</span>
+        <span data-target="simpleModal_10" data-toggle="modal" >200</span>
+        <span data-target="simpleModal_11" data-toggle="modal" >300</span>
+        <span data-target="simpleModal_12" data-toggle="modal" >300</span>
+        <span data-target="simpleModal_13" data-toggle="modal" >300</span>
+        <span data-target="simpleModal_14" data-toggle="modal" >300</span>
+        <span data-target="simpleModal_15" data-toggle="modal" >300</span>
+        <span data-target="simpleModal_16" data-toggle="modal" >400</span>
+        <span data-target="simpleModal_17" data-toggle="modal" >400</span>
+        <span data-target="simpleModal_18" data-toggle="modal" >400</span>
+        <span data-target="simpleModal_19" data-toggle="modal" >400</span>
+        <span data-target="simpleModal_20" data-toggle="modal" >400</span>
+        <span data-target="simpleModal_21" data-toggle="modal" >500</span>
+        <span data-target="simpleModal_22" data-toggle="modal" >500</span>
+        <span data-target="simpleModal_23" data-toggle="modal" >500</span>
+        <span data-target="simpleModal_24" data-toggle="modal" >500</span>
+        <span data-target="simpleModal_25" data-toggle="modal" >500</span>
+    </form>
+
+    <div id="simpleModal_q1" class="modal">
+        <div class="modal-window">
+            <input type="text" placeholder="Muuda teemat" id="Q1" />
+            <input type="button" id="btnq1" value="Muuda" />
+            <span class="close" data-dismiss="modal">&times;</span>      
+        </div>
+    </div>
+    <div id="simpleModal_q2" class="modal">
+        <div class="modal-window">
+            <input type="text" placeholder="Muuda teemat" id="Q2" />
+            <input type="button" id="btnq2" value="Muuda" />
+            <span class="close" data-dismiss="modal">&times;</span>      
+        </div>
+    </div>
+    <div id="simpleModal_q3" class="modal">
+        <div class="modal-window">
+            <input type="text" placeholder="Muuda teemat" id="Q3" />
+            <input type="button" id="btnq3" value="Muuda" />
+            <span class="close" data-dismiss="modal">&times;</span>      
+        </div>
+    </div>
+    <div id="simpleModal_q4" class="modal">
+        <div class="modal-window">
+            <input type="text" placeholder="Muuda teemat" id="Q4" />
+            <input type="button" id="btnq4" value="Muuda" />
+            <span class="close" data-dismiss="modal">&times;</span>      
+        </div>
+    </div>
+    <div id="simpleModal_q5" class="modal">
+        <div class="modal-window">
+            <input type="text" placeholder="Muuda teemat" id="Q5"/>
+            <input type="button" id="btnq5" value="Muuda" />
+            <span class="close" data-dismiss="modal">&times;</span>      
+        </div>
+    </div>
+
+
+
+    <div id="simpleModal_1" class="modal">
+        <div class="modal-window">
+            <h3>100</h3>
+            <p id="v1">3 + 4</p>
+            <input type="text" placeholder="Muuda küsimust" id="V1" />
+            <input type="button" id="btnv1" value="Muuda" /><br>
+            <h2 id="a1">7</h2>
+            <input type="text" placeholder="Muuda vastust" id="A1" />
+            <input type="button" id="btna1" value="Muuda" />
+            <span class="close" data-dismiss="modal">&times;</span>      
+        </div>
+    </div>
+    <div id="simpleModal_2" class="modal">
+        <div class="modal-window small">
+            <h3>100</h3>
+            <p id="v2">Millal lõppes teine maailmasõda?</p>
+            <input type="text" placeholder="Muuda küsimust" id="V2" />
+            <input type="button" id="btnv2" value="Muuda" /><br>
+            <h2 id="a2">1945</h2>
+            <input type="text" placeholder="Muuda vastust" id="A2" />
+            <input type="button" id="btna2" value="Muuda" />
+            <span class="close" data-dismiss="modal">&times;</span>
+        </div>
+    </div>
+    <div id="simpleModal_3" class="modal">
+        <div class="modal-window small">
+            <h3>100</h3>
+            <p id="v3">Küsimus</p>
+            <input type="text" placeholder="Muuda küsimust" id="V3" />
+            <input type="button" id="btnv3" value="Muuda" /><br>
+            <h2 id="a3">Vastus</h2>
+            <input type="text" placeholder="Muuda vastust" id="A3" />
+            <input type="button" id="btna3" value="Muuda" />
+            <span class="close" data-dismiss="modal">&times;</span>
+        </div>
+    </div>
+    <div id="simpleModal_4" class="modal">
+        <div class="modal-window small">
+            <h3>100</h3>
+            <p id="v4">Riik mille lipp on sini-must-valge?</p>
+            <input type="text" placeholder="Muuda küsimust" id="V4" />
+            <input type="button" id="btnv4" value="Muuda" /><br>
+            <h2 id="a4">Eesti</h2>
+            <input type="text" placeholder="Muuda vastust" id="A4" />
+            <input type="button" id="btna4" value="Muuda" />
+            <span class="close" data-dismiss="modal">&times;</span>
+        </div>
+    </div>
+    <div id="simpleModal_5" class="modal">
+        <div class="modal-window small">
+            <h3>100</h3>
+            <p id="v5">iPhone loonud firma</p>
+            <input type="text" placeholder="Muuda küsimust" id="V5" />
+            <input type="button" id="btnv5" value="Muuda" /><br>
+            <h2 id="a5">Apple</h2>
+            <input type="text" placeholder="Muuda vastust" id="A5" />
+            <input type="button" id="btna5" value="Muuda" />
+            <span class="close" data-dismiss="modal">&times;</span>
+        </div>
+    </div>
+    <div id="simpleModal_6" class="modal">
+        <div class="modal-window small">
+            <h3>200</h3>
+            <p id="v6">12 + 19</p>
+            <input type="text" placeholder="Muuda küsimust" id="V6" />
+            <input type="button" id="btnv6" value="Muuda" /><br>
+            <h2 id="a6">31</h2>
+            <input type="text" placeholder="Muuda vastust" id="A6" />
+            <input type="button" id="btna6" value="Muuda" />
+            <span class="close" data-dismiss="modal">&times;</span>
+        </div>
+    </div>
+    <div id="simpleModal_7" class="modal">
+        <div class="modal-window small">
+            <h3>200</h3>
+            <p id="v7">Millal Eesti taasiseseivus?</p>
+            <input type="text" placeholder="Muuda küsimust" id="V7" />
+            <input type="button" id="btnv7" value="Muuda" /><br>
+            <h2 id="a7">1991</h2>
+            <input type="text" placeholder="Muuda vastust" id="A7" />
+            <input type="button" id="btna7" value="Muuda" />
+            <span class="close" data-dismiss="modal">&times;</span>
+        </div>
+    </div>
+    <div id="simpleModal_8" class="modal">
+        <div class="modal-window small">
+            <h3>200</h3>
+            <p id="v8">Küsimus</p>
+            <input type="text" placeholder="Muuda küsimust" id="V8" />
+            <input type="button" id="btnv8" value="Muuda" /><br>
+            <h2 id="a8">Vastus</h2>
+            <input type="text" placeholder="Muuda vastust" id="A8" />
+            <input type="button" id="btna8" value="Muuda" />
+            <span class="close" data-dismiss="modal">&times;</span>
+        </div>
+    </div>
+    <div id="simpleModal_9" class="modal">
+        <div class="modal-window small">
+            <h3>200</h3>
+            <p id="v9">Populatsioonilt suurim riik Euroopa Liidus</p>
+            <input type="text" placeholder="Muuda küsimust" id="V9" />
+            <input type="button" id="btnv9" value="Muuda" /><br>
+            <h2 id="a9">Saksamaa</h2>
+            <input type="text" placeholder="Muuda vastust" id="A9" />
+            <input type="button" id="btna9" value="Muuda" />
+            <span class="close" data-dismiss="modal">&times;</span>
+        </div>
+    </div>
+    <div id="simpleModal_10" class="modal">
+        <div class="modal-window small">
+            <h3>200</h3>
+            <p id="v10">Visual Studio Code on loodud selle firma poolt</p>
+            <input type="text" placeholder="Muuda küsimust" id="V10" />
+            <input type="button" id="btnv10" value="Muuda" /><br>
+            <h2 id="a10">Microsoft</h2>
+            <input type="text" placeholder="Muuda vastust" id="A10" />
+            <input type="button" id="btna10" value="Muuda" />
+            <span class="close" data-dismiss="modal">&times;</span>
+        </div>
+    </div>
+    <div id="simpleModal_11" class="modal">
+        <div class="modal-window small">
+            <h3>300</h3>
+            <p id="v11">164 - 79</p>
+            <input type="text" placeholder="Muuda küsimust" id="V11" />
+            <input type="button" id="btnv11" value="Muuda" /><br>
+            <h2 id="a11">85</h2>
+            <input type="text" placeholder="Muuda vastust" id="A11" />
+            <input type="button" id="btna11" value="Muuda" />
+            <span class="close" data-dismiss="modal">&times;</span>
+        </div>
+    </div>
+    <div id="simpleModal_12" class="modal">
+        <div class="modal-window small">
+            <h3>300</h3>
+            <p id="v12">Millal kadus pärisorjus Eestist üleni?</p>
+            <input type="text" placeholder="Muuda küsimust" id="V12" />
+            <input type="button" id="btnv12" value="Muuda" /><br>
+            <h2 id="a12">1819</h2>
+            <input type="text" placeholder="Muuda vastust" id="A12" />
+            <input type="button" id="btna12" value="Muuda" />
+            <span class="close" data-dismiss="modal">&times;</span>
+        </div>
+    </div>
+    <div id="simpleModal_13" class="modal">
+        <div class="modal-window small">
+            <h3>300</h3>
+            <p id="v13">Küsimus</p>
+            <input type="text" placeholder="Muuda küsimust" id="V13" />
+            <input type="button" id="btnv13" value="Muuda" /><br>
+            <h2 id="a13">Vastus</h2>
+            <input type="text" placeholder="Muuda vastust" id="A13" />
+            <input type="button" id="btna13" value="Muuda" />
+            <span class="close" data-dismiss="modal">&times;</span>
+        </div>
+    </div>
+    <div id="simpleModal_14" class="modal">
+        <div class="modal-window small">
+            <h3>300</h3>
+            <p id="v14">Populatsioonilt teine maailmas</p>
+            <input type="text" placeholder="Muuda küsimust" id="V14" />
+            <input type="button" id="btnv14" value="Muuda" /><br>
+            <h2 id="a14">India</h2>
+            <input type="text" placeholder="Muuda vastust" id="A14" />
+            <input type="button" id="btna14" value="Muuda" />
+            <span class="close" data-dismiss="modal">&times;</span>
+        </div>
+    </div>
+    <div id="simpleModal_15" class="modal">
+        <div class="modal-window small">
+            <h3>300</h3>
+            <p id="v15">Eestis müüduim automark</p>
+            <input type="text" placeholder="Muuda küsimust" id="V15" />
+            <input type="button" id="btnv15" value="Muuda" /><br>
+            <h2 id="a15">Toyota</h2>
+            <input type="text" placeholder="Muuda vastust" id="A15" />
+            <input type="button" id="btna15" value="Muuda" />
+            <span class="close" data-dismiss="modal">&times;</span>
+        </div>
+    </div>
+    <div id="simpleModal_16" class="modal">
+        <div class="modal-window small">
+            <h3>400</h3>
+            <p id="v16">6 x 13</p>
+            <input type="text" placeholder="Muuda küsimust" id="V16" />
+            <input type="button" id="btnv16" value="Muuda" /><br>
+            <h2 id="a16">78</h2>
+            <input type="text" placeholder="Muuda vastust" id="A16" />
+            <input type="button" id="btna16" value="Muuda" />
+            <span class="close" data-dismiss="modal">&times;</span>
+        </div>
+    </div>
+    <div id="simpleModal_17" class="modal">
+        <div class="modal-window small">
+            <h3>400</h3>
+            <p id="v17">Kes oli USA 44. president?</p>
+            <input type="text" placeholder="Muuda küsimust" id="V17" />
+            <input type="button" id="btnv17" value="Muuda" /><br>
+            <h2 id="a17">Obama</h2>
+            <input type="text" placeholder="Muuda vastust" id="A17" />
+            <input type="button" id="btna17" value="Muuda" />
+            <span class="close" data-dismiss="modal">&times;</span>
+        </div>
+    </div>
+    <div id="simpleModal_18" class="modal">
+        <div class="modal-window small">
+            <h3>400</h3>
+            <p id="v18">Küsimus</p>
+            <input type="text" placeholder="Muuda küsimust" id="V18" />
+            <input type="button" id="btnv18" value="Muuda" /><br>
+            <h2 id="a18">Vastus</h2>
+            <input type="text" placeholder="Muuda vastust" id="A18" />
+            <input type="button" id="btna18" value="Muuda" />
+            <span class="close" data-dismiss="modal">&times;</span>
+        </div>
+    </div>
+    <div id="simpleModal_19" class="modal">
+        <div class="modal-window small">
+            <h3>400</h3>
+            <p id="v19">See riik on Montenegro lõunapoolsem naaber</p>
+            <input type="text" placeholder="Muuda küsimust" id="V19" />
+            <input type="button" id="btnv19" value="Muuda" /><br>
+            <h2 id="a19">Kreeka</h2>
+            <input type="text" placeholder="Muuda vastust" id="A19" />
+            <input type="button" id="btna19" value="Muuda" />
+            <span class="close" data-dismiss="modal">&times;</span>
+        </div>
+    </div>
+    <div id="simpleModal_20" class="modal">
+        <div class="modal-window small">
+            <h3>400</h3>
+            <p id="v20">Kõige levinum kohvikubränd Tallinnas</p>
+            <input type="text" placeholder="Muuda küsimust" id="V20" />
+            <input type="button" id="btnv20" value="Muuda" /><br>
+            <h2 id="a20">Coffe In</h2>
+            <input type="text" placeholder="Muuda vastust" id="A20" />
+            <input type="button" id="btna20" value="Muuda" />
+            <span class="close" data-dismiss="modal">&times;</span>
+        </div>
+    </div>
+    <div id="simpleModal_21" class="modal">
+        <div class="modal-window small">
+            <h3>500</h3>
+            <p id="v21">5! = ?</p>
+            <input type="text" placeholder="Muuda küsimust" id="V21" />
+            <input type="button" id="btnv21" value="Muuda" /><br>
+            <h2 id="a21">120</h2>
+            <input type="text" placeholder="Muuda vastust" id="A21" />
+            <input type="button" id="btna21" value="Muuda" />
+            <span class="close" data-dismiss="modal">&times;</span>
+        </div>
+    </div>
+    <div id="simpleModal_22" class="modal">
+        <div class="modal-window small">
+            <h3>500</h3>
+            <p id="v22">Kes oli Eesti kolmas president?</p>
+            <input type="text" placeholder="Muuda küsimust" id="V22" />
+            <input type="button" id="btnv22" value="Muuda" /><br>
+            <h2 id="a22">Arnold Rüütel</h2>
+            <input type="text" placeholder="Muuda vastust" id="A22" />
+            <input type="button" id="btna22" value="Muuda" />
+            <span class="close" data-dismiss="modal">&times;</span>
+        </div>
+    </div>
+    <div id="simpleModal_23" class="modal">
+        <div class="modal-window small">
+            <h3>500</h3>
+            <p id="v23">Küsimus</p> 
+            <input type="text" placeholder="Muuda küsimust" class="modal-input" id="V23" />
+            <input type="button" class="modal-input" id="btnv23" value="Muuda" /><br>
+            <h2 id="a23">Vastus</h2>
+            <input type="text" placeholder="Muuda vastust" class="modal-input" id="A23" />
+            <input type="button" class="modal-input" id="btna23" value="Muuda" />
+            <span class="close" data-dismiss="modal">&times;</span>
+        </div>
+    </div>
+    <div id="simpleModal_24" class="modal">
+        <div class="modal-window small">
+            <h3>500</h3>
+            <p id="v24">See riik võitis 2002 aastal Eurovisiooni</p>
+            <input type="text" placeholder="Muuda küsimust" id="V24" />
+            <input type="button" id="btnv24" value="Muuda" /><br>
+            <h2 id="a24">Läti</h2>
+            <input type="text" placeholder="Muuda vastust" id="A24" />
+            <input type="button" id="btna24" value="Muuda" />
+            <span class="close" data-dismiss="modal">&times;</span>
+        </div>
+    </div>
+    <div id="simpleModal_25" class="modal">
+        <div class="modal-window small">
+            <h3>500</h3>
+            <p id="v25">Mis firma logoga on tegemist?</p>
+            <input type="text" placeholder="Muuda küsimust" id="V25" />
+            <input type="button" id="btnv25" value="Muuda" /><br>
+            <h2 id="a25">Omniva</h2>
+            <input type="text" placeholder="Muuda vastust" id="A25" />
+            <input type="button" id="btna25" value="Muuda" />
+            <span class="close" data-dismiss="modal">&times;</span>
+        </div>
+    </div>
+
+<div class="points">
+    <div id="container">
+        <h4>Tiim 1:</h4>
+        <div id="number1">0</div>
+        <button class="plussminus" id="decrement1">-</button> <button class="plussminus" id="increment1">+</button>
+    </div><br>
+    <div id="container">
+        <h4>Tiim 2:</h4>
+        <div id="number2">0</div>
+        <button class="plussminus" id="decrement2">-</button> <button class="plussminus" id="increment2">+</button>
+    </div><br>
+    <div id="container">
+        <h4>Tiim 3:</h4>
+        <div id="number3">0</div>
+        <button class="plussminus" id="decrement3">-</button> <button class="plussminus" id="increment3">+</button>
+    </div>
+</div>
+<footer>
+        
+    <div id="authorContainer" class="author-container">
+        <div id="author" class="author-container">
+            <p>Tanel Volkov</p>
+        </div>
+        <div id="repo" class="repo-container">
+            <p><a href="https://github.com/tanelvo/1-kodutoo" target ="_blank">Github</a></p>
+        </div>
+    </div>
+  </footer>
+
+</body>
+</html>

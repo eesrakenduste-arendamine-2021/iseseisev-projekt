@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: rgb(185, 244, 252);
+    }
+.pagename{
+  color:rgb(255, 241, 113);
+  position:absolute;
+  font-size: 100px;
+  top:2%;
+  left:36%;
+}
+h2{
+  color: black; 
+  background: black;
+  border-radius: 10px;
+}
+h2:active{
+  color:#000000;
+  background: white;
+}
+h3{
+  font-size: 30px;
+}
+p{
+  font-size: 20px;
+}
+.vorm{
+position: relative;
+display: grid;
+top:20%;
+}
+.vorm .value{
+grid-column: span 5;
+height: 0px;
+text-align: right;
+border: none;
+outline: none;
+padding: 0px;
+font-size: 0px;
+}
+.vorm span{
+display: grid;
+width: 160px;
+height: 96px;
+color: #fff;
+background: rgba(39, 17, 136, 0.5);
+place-items: center;
+border: 1px solid rgba(0,0,0,.1);
+font-size:18px;
+
+}
+
+.vorm span:hover{
+background: #75a4d1;
+color: #fff;
+}
+.vorm span:active{
+background: #b9d2ff;
+color: #fff;
+}
+
+.vorm span.quest{
+background: rgba(39, 17, 136, 0.6);
+font-size: 20px;
+}
+.vorm span.quest:hover{
+background: rgba(39, 17, 136, 0.58);
+}
+
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+  overflow: auto;
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+}
+
+.modal-window {
+  position: relative;
+  background-color: #FFFFFF;
+  width: 50%;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 25px;
+}
+.modal-input{
+  border-radius: 5px;
+  font-size: 12px;
+  height: 120%;
+}
+
+.modal-window.small {
+  width: 50%;
+}
+
+.modal-window.large {
+  width: 50%;
+}
+
+.close {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  color: rgba(0,0,0,0.3);
+  height: 30px;
+  width: 30px;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.close:hover,
+.close:focus {
+  color: #000000;
+  cursor: pointer;
+}
+
+.open {
+  display: block;
+}
+
+.points{
+  position: absolute;
+  right: 5%;
+}
+.plussminus{
+  height: 25px;
+  width: 25px;
+}
+#number1{
+  text-align: center;
+}
+#number2{
+  text-align: center;
+}
+#number3{
+  text-align: center;
+}
+.author-container {
+  display: flex;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  font-style:normal;
+  font-family: 'Orbitron', sans-serif;
+  justify-content: space-between;
+  width: 92%;
+  margin: auto;
+}
+
+footer{
+  padding-top: 22%;
+  flex-shrink: 10;
+}
