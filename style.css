@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body{
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 50px;
+    background-color: black;
+    cursor: default;
+    
+}
+
+#canvas-container{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1280px;
+    outline: white 3px solid;
+    background-color: black;
+}
+
+#title{
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 32px;
+    color: white;
+}
+
+.ui{
+    position: absolute;
+    left: 50%;
+}
+
+.ui #left-score{
+    display: inline-block;
+    position: relative;
+    padding-top: 10px;
+    left: -75%;
+    font-size: 32px;
+    color: white;
+}
+
+.ui #right-score{
+    left: -19.1%;
+    display: inline-block;
+    position: relative;
+    padding-top: 10px;
+    font-size: 32px;
+    color: white;
+}
+
+.ui #half-line{
+    position: absolute;
+    border-left: 6px dashed white;
+    height: 720px;
+    margin-left: -3px;
+    top: 0;
+}
+
+.game-choice{
+    display: none;
+    color: white;
+}
+
+#test{
+    position: absolute;
+    left: 48%;
+}
