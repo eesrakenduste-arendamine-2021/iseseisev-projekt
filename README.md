@@ -7,6 +7,7 @@
 2. Võimalik salvestada nimi ning email, et luua salvestatud andemtega kontosi.
 3. Paroolid luuakse igakord juhuslikult ning sisaldab sümboleid, numbreid, suuri ja väiksed tähti.
 4. Luues juhuslikude andemetega kasutaja, avab broswer uue tabi, mis viib kasutaja ajutisele e-postile.
+Peamiselt testitud leheküljel: https://www.ge-tracker.com/
 
 ## Kuidas rakendust kasutada
 Rakendus on mõeldud chromiumi baasil põhinevatele browseritele.
