@@ -6,7 +6,7 @@
 1. Võimalik paljudel lehekülgedel luua kiirelt kasutajakonto. Rakendus on just mõeldud spam lehekülge jaoks või leheküljed, <br> mis pakuvad tasuta proovi perioodi.
 2. Võimalik salvestada nimi ning email, et luua salvestatud andemtega kontosi.
 3. Paroolid luuakse igakord juhuslikult ning sisaldab sümboleid, numbreid, suuri ja väiksed tähti.
-4. Luues juhuslikude andemetega kasutaja, avab broswer uue tabi, mis viib kasutaja ajutisele e-postile.
+4. Luues juhuslikude andemetega kasutaja, avab broswer uue tabi, mis viib kasutaja ajutisele e-postile.<br>
 Peamiselt testitud leheküljel: https://www.ge-tracker.com/
 
 ## Kuidas rakendust kasutada
