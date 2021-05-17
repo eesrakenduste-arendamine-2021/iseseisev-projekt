@@ -7,7 +7,7 @@ body {
 
 html {
     width: 150px;
-    height: 170px;
+    height: 220px;
 }
 
 #btns {
@@ -16,7 +16,8 @@ html {
 
 #rautofill,
 #sautofill,
-#go-to-options {
+#go-to-options,
+#git {
     cursor: pointer;
     margin-top: 10px;
     background-color: #2c5764;
@@ -25,4 +26,10 @@ html {
     color: white;
     width: 100px;
     height: 35px;
+}
+
+#author {
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: center;
 }

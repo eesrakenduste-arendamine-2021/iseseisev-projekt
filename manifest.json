@@ -1,8 +1,8 @@
 {
     "manifest_version": 2,
 
-    "name": "Rakendus",
-    "description": "Rakendus taidab paar lunka",
+    "name": "FileeR",
+    "description": "Auto fill registration forms.",
     "version": "0.0.1",
     "options_page": "options.html",
 

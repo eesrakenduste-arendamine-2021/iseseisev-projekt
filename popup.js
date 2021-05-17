@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     var rautofill = document.getElementById('rautofill');
     var sautofill = document.getElementById('sautofill');
+    var options = document.getElementById('go-to-options');
+    var github = document.getElementById('git');
 
 
     rautofill.addEventListener('click', function() {
@@ -19,12 +21,16 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 
-    document.querySelector('#go-to-options').addEventListener('click', function() {
+    options.addEventListener('click', function() {
         if (chrome.runtime.openOptionsPage) {
             chrome.runtime.openOptionsPage();
         } else {
             window.open(chrome.runtime.getURL('options.html'));
         }
+    });
+
+    github.addEventListener('click', function() {
+        window.open('https://github.com/karljanar/iseseisev-projekt');
     });
 
 

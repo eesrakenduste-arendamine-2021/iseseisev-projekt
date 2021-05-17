@@ -5,7 +5,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
     color: white;
 }
@@ -17,10 +17,10 @@ body {
     width: 400px;
     padding: 40px;
     box-sizing: border-box;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 10px 20px rgba(27, 27, 27, 0.877);
     border-radius: 10px;
     transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, 0.575);
 }
 
 .optionsContainer h2 {
@@ -30,12 +30,16 @@ body {
 .optionsContainer .options input {
     color: white;
     width: 100%;
-    padding: 10px 0;
+    padding: 7px 0%;
     font-size: 16px;
     margin-bottom: 30px;
     border: none;
     border-bottom: 1px solid white;
     background: transparent;
+}
+
+input:focus {
+    outline: none;
 }
 
 .savebtn {
