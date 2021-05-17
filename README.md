@@ -13,6 +13,8 @@ Rakendus on mõeldud chromiumi baasil põhinevatele browseritele.
 Rakenduse tööle saamiseks peab navigeerima "Extensions" lehele, aktiveerima "Developer mode" ning valima tekkinud menüüst "Load unpacked", peale seda tuleb navigeerida rakenduse kausta ning see kaust valida. Nüüd on rakendus browseris töötamas.
 
 ## Ekraanitõmmised
+![fill](https://user-images.githubusercontent.com/25798556/118486209-03798a00-b722-11eb-89bc-5580bb114b2a.PNG)
+![fille](https://user-images.githubusercontent.com/25798556/118486217-05dbe400-b722-11eb-9d4a-52917d27d21f.PNG)
 
 
 
