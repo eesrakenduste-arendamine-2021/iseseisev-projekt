@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Mälumäng</title>
+		<link rel="stylesheet" href="style.css" />
+		<style>
+			.dropdown:hover .dropdown-content {
+				display: block;
+			}
+		</style>
+		<script src="game.js" defer></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<header></header>
+		<div class="parent" id="parent">
+			<div class="points">
+				<span class="time">Aeg: <span id="currentTime"></span></span>
+				<span class="play"><button id="playButton" onclick="start()">Mängi</button></span>
+				<div class="dropdown" id="picSelect">
+					<button class="dropbtn">Vali piltide teema</button>
+					<div class="dropdown-content" id="picSelectDiv">
+						<button value="default" onclick="changePic('default')">Kõike</button>
+						<button value="landscape" onclick="changePic('landscape')">Maastik</button>
+						<button value="animals" onclick="changePic('animals')">Loomad</button>
+						<button value="pom" onclick="changePic('pom')">Pomeranian (koeratõug)</button>
+						<button value="food" onclick="changePic('food')">Välismaised toidud</button>
+						<button value="landmarks" onclick="changePic('landmarks')">Vaatamisväärsused</button>
+					</div>
+				</div>
+				<span class="turns">Käike: <span id="currentTurns"></span></span>
+			</div>
+			<div class="game" id="game">
+				<table class="table">
+					<tr>
+						<th><img src="img/default.jpg" alt="default" id="pic1" class="picture" /></th>
+						<th><img src="img/default.jpg" alt="default" id="pic2" class="picture" /></th>
+						<th><img src="img/default.jpg" alt="default" id="pic3" class="picture" /></th>
+						<th><img src="img/default.jpg" alt="default" id="pic4" class="picture" /></th>
+					</tr>
+					<tr>
+						<th><img src="img/default.jpg" alt="default" id="pic5" class="picture" /></th>
+						<th><img src="img/default.jpg" alt="default" id="pic6" class="picture" /></th>
+						<th><img src="img/default.jpg" alt="default" id="pic7" class="picture" /></th>
+						<th><img src="img/default.jpg" alt="default" id="pic8" class="picture" /></th>
+					</tr>
+					<tr>
+						<th><img src="img/default.jpg" alt="default" id="pic9" class="picture" /></th>
+						<th><img src="img/default.jpg" alt="default" id="pic10" class="picture" /></th>
+						<th><img src="img/default.jpg" alt="default" id="pic11" class="picture" /></th>
+						<th><img src="img/default.jpg" alt="default" id="pic12" class="picture" /></th>
+					</tr>
+				</table>
+				<div id="gameWon">
+					<div id="message">Sa võitsid!</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
