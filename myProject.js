@@ -1,4 +1,3 @@
-let timer = 90;
 let runningTimer;
 let easyTimer = 90;
 let hardTimer = 45;
