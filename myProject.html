@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tallinna Ülikooli viktoriin</title>
+    <link rel="stylesheet" href="myProject.css">
+  </head>
+  <body>
+    <main class="quizArea">
+      <header class="mainHeader">
+        <h1>VIKTORIIN</h1>
+        <span id="selectedLevel" class="hide">Hetkel pole levelit valitud</span>
+        <span id="timerArea" class="timerArea"></span>
+      </header>
+      <section id="questionsContainer" class="hide">
+        <div id="question"></div>
+        <div id="answers" class="buttonArea"></div>
+      </section>
+      <section class="scores">
+        <div id="scoreArea" class="hide"></div>
+      </section>
+      <div class="option">
+        <div class="one level">
+            <button class="easy" id="easy">LIHTNE</button>
+            <button class="hard" id="hard">RASKE</button>
+        </div>
+    </div>
+      <section class="controls">
+        <button class="start" id="startButton">ALUSTA</button>
+        <button class="btn" id="showScoresButton">Edetabel</button>
+        <br/>
+        <div id="scoreArea" class="hide">
+          <span id="scoreDisplay"></span>
+          <input type="text" name="initials" id="initials" />
+          <button id="submitScore" class="submit">Salvesta tulemus</button>
+        </div>
+      </section>
+    </main>
+    <script src="myProject.js"></script>
+  </body>
+</html>
