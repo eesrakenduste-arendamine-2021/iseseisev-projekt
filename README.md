@@ -2,7 +2,7 @@
 
 ## Autorid ja veebileht
 
-Autorid: Harli Kodasma, Ekke Alar Toomingas
+Autorid: Harli Kodasma, Ekke Alar Toomingas  
 Rakendus on kättesaadav siin: http://www.tlu.ee/~harli17/eesrakendused/projekt/
 
 ## Rakendusest ja selle funktsionaalsusest
