@@ -1,52 +1,39 @@
-# iseseisev-projekt
+# Iseseisev projekt - mälumäng (memory game)
 
-Tähtaeg - 1 päev enne esitlust. Esitluse kuupäevadeks: 1 nädal peale ÕISis valitud arvestuse kuupäeva (v.a arvatud järelarvestus, mis toimub õigel kuupäeval) - kindlasti tuleb arvestusele registreerida. Projektide esitlemine toimub:
-1. 14.05.2021 kell 10:15-12:15 zoomis
-Topic: Eesrakenduste arendamine arvestus
-Time: May 14, 2021 10:15 AM Helsinki
+## Autorid ja veebileht
 
-Join Zoom Meeting
-https://us02web.zoom.us/j/84123937523?pwd=cDJSNVFhS1QxTmJIMko3blEvKzg0UT09
+Autorid: Harli Kodasma, Ekke Alar Toomingas  
+Rakendus on kättesaadav siin: http://www.tlu.ee/~harli17/eesrakendused/projekt/
 
-Meeting ID: 841 2393 7523
-Passcode: 828751
+## Rakendusest ja selle funktsionaalsusest
 
-**Projektide lõpptähtaeg: 21.05.2021 - kogu kood pull requestina esitatud.**
+Tegu on mälumänguga ehk memory game, kus on ette antud 3x4 ruudustik tagurpidi pööratud pilte. Korraga saab avada kaks pilti. Avades kaks samasugust pilti jäävad need avatuks, erinevate piltide avamisel pööratakse need uuesti tagurpidi. Mäng lõppeb, kui kõik paarid on leitud ja ümber pööratud. Funktsionaalsus:
+* Igal korral on piltide asetus täielikult randomly generated
+* Enne mängu alustamist on võimalik valida 6 erineva teema vahel, milliste piltidega mängima hakkad
+* Ülalmainitud menüü on kokku ehitatud tutoriali ja omaloomingu põhjal. Tegu pole tavalise rippmenüüga vaid hiirega üle hoverides avaneb see ilma klikita, valikule klikkides kaob menüü eest ära (see osa on omalooming) ning viimati tehtud valik muutub ka menüü "pealkirjaks" (see on samuti omalooming)
+* Vajutades "Mängi" nupule hakkab jooksma aeg, mis jääb seisma mängu lõppedes
+* Iga pildipaari avamine läheb arvesse ühe käiguna ning käikude arvu näidatakse mängu ajal
+* Mängu taaskäivitamiseks on olemas nupp nii mängu ajal kui ka lõpus
+* Iga pildile vajutusega kõlab heli
+* Ebasobiva paari tagasi ümberpööramisel kõlab heli
+* Mängu võitmisel kuvatakse sellekohane teade ning kõlab heli
 
-3. Järelarvestus - 04.06.2021 kell 10:15-11:45
+Märkus: ajal, mil ebasobivat paari pilte pööratakse ümber, ei saa lehel midagi vajutada, kaasa arvatud "Mängi uuesti" nuppu. Seda põhjusel, et vältida pilte kiiresti "spammides" rohkem kui 2 pildi korraga avanemine. Selle takistamiseks on kirjutatud JSis tingimus, et kui 2 pilti juba on lahti, siis leht freezitakse seniks kuni mittesobiv paar on tagasi pööratud.
 
+## Tööjaotus
 
+Harli tegi JSis kogu pics.forEach tsükli ning enamus HTMList. Ekke tegi kogu CSSi. Ülejäänud JSi ning osa HTMList tegime koostööna Visual Studio Code Live Share abil. Mõlemad otsisime ja valmistasime ette pooled erinevatest piltidest, mida mäng kasutab.
 
-Eesrakenduste arendamise iseseisva projekti lähteülesanne. 
+## Ekraanipildid rakendusest
 
-Töö võib teha teha 1-4 liikmelise meeskonnana. Punkte jaotatakse vastavalt sellele, mitu liiget on meeskonnas:
-* 1 liige - max 70 punkti/inimene.
-* 2 liiget - max 40 punkti/inimene.
-* 3 liiget - max 30 punkti/inimene.
-* 4 liiget - max 20 punkti/inimene.
+### Avavaade enne mängu alustamist, kus on lahti tehtud pildi teema valikumenüü
 
-**NB! Kui meeskonnas on rohkem kui üks liige, siis peab githubis selgelt välja tulema, kes millist osa tegi, et oleks võimalik hinnata iga meeskonnaliikme individuaalset panust.**
+![Esimene screenshot](screenshots/screen1.PNG)
 
-README.md fail sisaldab:
-1. suurelt rakenduse nime;
-1. autorite nimesid;
-1. rakenduse funktsionaalsuse kirjeldust;
-1. ekraanitõmmist rakendusest.
+### Keset mängu tehtud pilt, kus kaks pildipaari on leitud ning teemaks on valitud loomad
 
-Rakenduse puhul peavad olema täidetud vähemalt järgmised nõuded:
-  * rakendus lahendab tõsist probleemi või on meelelahutusliku eesmärgiga; 
-  * rakenduse idee peab olema kooskõlastatud õppejõuga;
-  * responsive disain (kui tegemist pole ainult desktopile mõeldud mänguga);
-  * rakenduse javascripti osa on vähemalt 200 rida koodi ja koodi kordused peavad olema minimeeritud;
-  
-Teema ettepanekud:
- * Kuldvillak
- * Filmiinfo rakendus kasutades moviedatabase api-t - saab otsida filme, seriaale ja teha list enda vaadatud filmidest jne. 
- * Raamaturiiuli rakendus - Saab sisestada kodus olevad raamatud, märkida millised on loetud ja millised on pooleli. Moodustada lugemiseks eraldi liste ning märkida, mis leheküljel on raamat hetkel pooleli.
- * 
+![Teine screenshot](screenshots/screen2.PNG)
 
-Rakenduses võib kasutada teiste autorite koodi, aga see peab olema viidatud. Üle 50% koodist (javascript ja CSS) peab olema enda kirjutatud. Kasutada võib erinevaid API-sid ja võib kasutada erinevaid javascripti teeke (library).
+### Vaade pärast mängu võitmist, kus teemaks on valitud "kõike" ehk jäetud default valik
 
-# Esitlus
-* Igale grupile on aega 15 minutit (6 minutit rakenduse esitlus, 6 minutit koodi esitlus, 3 minutit küsimused)
-* Esitama peavad grupiliikmed ühisel ajal. 
+![Kolmas screenshot](screenshots/screen3.PNG)
