@@ -16,3 +16,4 @@
 Pildid:
 ![image](https://user-images.githubusercontent.com/70900278/119187897-9ac44180-ba82-11eb-829c-a2ae2a9f0dbb.png)
 ![image](https://user-images.githubusercontent.com/70900278/119189068-386c4080-ba84-11eb-96a9-473c8e31b97f.png)
+![image](https://user-images.githubusercontent.com/70900278/119189379-ab75b700-ba84-11eb-9c43-d7639ea76636.png)
