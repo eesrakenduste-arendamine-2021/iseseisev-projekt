@@ -1,52 +1,15 @@
 # iseseisev-projekt
 
-Tähtaeg - 1 päev enne esitlust. Esitluse kuupäevadeks: 1 nädal peale ÕISis valitud arvestuse kuupäeva (v.a arvatud järelarvestus, mis toimub õigel kuupäeval) - kindlasti tuleb arvestusele registreerida. Projektide esitlemine toimub:
-1. 14.05.2021 kell 10:15-12:15 zoomis
-Topic: Eesrakenduste arendamine arvestus
-Time: May 14, 2021 10:15 AM Helsinki
+# CONNECT FOUR
+Autor: Lisanne Järv
 
-Join Zoom Meeting
-https://us02web.zoom.us/j/84123937523?pwd=cDJSNVFhS1QxTmJIMko3blEvKzg0UT09
+Rakenduse eesmärgiks on meelelahutus. Tegemist on mänguga, kus peab saama kas 4 punast või kollast ringi kokku. Võimalik on diagonaalis, horisontaalselt või vertikaalselt seda teha. Mängu alustab punane ja mängija valib 7 koha vahel, kuhu soovib oma nupu panna. Klõpsates kohal ilmub punane nupp ja automaatselt on kollase mänija kord. Nii kuni üks mängijatest saab 4 kokku. Seejärel teatatakse võitja ja saab restart nupust mängu uuesti alustada.
 
-Meeting ID: 841 2393 7523
-Passcode: 828751
+Link http://greeny.cs.tlu.ee/~lisajar/testid/kk/
 
-**Projektide lõpptähtaeg: 21.05.2021 - kogu kood pull requestina esitatud.**
-
-3. Järelarvestus - 04.06.2021 kell 10:15-11:45
+![Screenshot 2021-05-21 at 22 08 34](https://user-images.githubusercontent.com/70939087/119189065-373b1380-ba84-11eb-80de-a1b905d49f23.png)
+![Screenshot 2021-05-21 at 22 08 51](https://user-images.githubusercontent.com/70939087/119189062-36a27d00-ba84-11eb-90ad-28534a897081.png)
+![Screenshot 2021-05-21 at 22 09 40](https://user-images.githubusercontent.com/70939087/119189058-34d8b980-ba84-11eb-8b3e-27a3bc4ece74.png)
+![Screenshot 2021-05-21 at 22 09 16](https://user-images.githubusercontent.com/70939087/119189061-36a27d00-ba84-11eb-9059-a6bcce6c0631.png)
 
 
-
-Eesrakenduste arendamise iseseisva projekti lähteülesanne. 
-
-Töö võib teha teha 1-4 liikmelise meeskonnana. Punkte jaotatakse vastavalt sellele, mitu liiget on meeskonnas:
-* 1 liige - max 70 punkti/inimene.
-* 2 liiget - max 40 punkti/inimene.
-* 3 liiget - max 30 punkti/inimene.
-* 4 liiget - max 20 punkti/inimene.
-
-**NB! Kui meeskonnas on rohkem kui üks liige, siis peab githubis selgelt välja tulema, kes millist osa tegi, et oleks võimalik hinnata iga meeskonnaliikme individuaalset panust.**
-
-README.md fail sisaldab:
-1. suurelt rakenduse nime;
-1. autorite nimesid;
-1. rakenduse funktsionaalsuse kirjeldust;
-1. ekraanitõmmist rakendusest.
-
-Rakenduse puhul peavad olema täidetud vähemalt järgmised nõuded:
-  * rakendus lahendab tõsist probleemi või on meelelahutusliku eesmärgiga; 
-  * rakenduse idee peab olema kooskõlastatud õppejõuga;
-  * responsive disain (kui tegemist pole ainult desktopile mõeldud mänguga);
-  * rakenduse javascripti osa on vähemalt 200 rida koodi ja koodi kordused peavad olema minimeeritud;
-  
-Teema ettepanekud:
- * Kuldvillak
- * Filmiinfo rakendus kasutades moviedatabase api-t - saab otsida filme, seriaale ja teha list enda vaadatud filmidest jne. 
- * Raamaturiiuli rakendus - Saab sisestada kodus olevad raamatud, märkida millised on loetud ja millised on pooleli. Moodustada lugemiseks eraldi liste ning märkida, mis leheküljel on raamat hetkel pooleli.
- * 
-
-Rakenduses võib kasutada teiste autorite koodi, aga see peab olema viidatud. Üle 50% koodist (javascript ja CSS) peab olema enda kirjutatud. Kasutada võib erinevaid API-sid ja võib kasutada erinevaid javascripti teeke (library).
-
-# Esitlus
-* Igale grupile on aega 15 minutit (6 minutit rakenduse esitlus, 6 minutit koodi esitlus, 3 minutit küsimused)
-* Esitama peavad grupiliikmed ühisel ajal. 
