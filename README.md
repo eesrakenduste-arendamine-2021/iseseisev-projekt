@@ -1,52 +1,19 @@
 # iseseisev-projekt
+# Autor - Alex Nelke
 
-Tähtaeg - 1 päev enne esitlust. Esitluse kuupäevadeks: 1 nädal peale ÕISis valitud arvestuse kuupäeva (v.a arvatud järelarvestus, mis toimub õigel kuupäeval) - kindlasti tuleb arvestusele registreerida. Projektide esitlemine toimub:
-1. 14.05.2021 kell 10:15-12:15 zoomis
-Topic: Eesrakenduste arendamine arvestus
-Time: May 14, 2021 10:15 AM Helsinki
+Tegin React-ga gallerii portfoolio koos firebase andmebaasiga, fotograaf saab sisse logida ja siis tekib nupp lisa pilte.
 
-Join Zoom Meeting
-https://us02web.zoom.us/j/84123937523?pwd=cDJSNVFhS1QxTmJIMko3blEvKzg0UT09
+## sisselogitud:
+![image](https://user-images.githubusercontent.com/71014196/119161369-ef0af980-ba61-11eb-909f-b3bf352df878.png)
+## Sisselogimine:
+![image](https://user-images.githubusercontent.com/71014196/119161479-0944d780-ba62-11eb-9db1-21b440171762.png)
+## Väljalogitud:
+![image](https://user-images.githubusercontent.com/71014196/119161797-604aac80-ba62-11eb-9477-bb4cc8fbe581.png)
+## mobiili vaade:
+![image](https://user-images.githubusercontent.com/71014196/119161876-7193b900-ba62-11eb-8c07-eca80624b4e1.png)
 
-Meeting ID: 841 2393 7523
-Passcode: 828751
-
-**Projektide lõpptähtaeg: 21.05.2021 - kogu kood pull requestina esitatud.**
-
-3. Järelarvestus - 04.06.2021 kell 10:15-11:45
-
-
-
-Eesrakenduste arendamise iseseisva projekti lähteülesanne. 
-
-Töö võib teha teha 1-4 liikmelise meeskonnana. Punkte jaotatakse vastavalt sellele, mitu liiget on meeskonnas:
-* 1 liige - max 70 punkti/inimene.
-* 2 liiget - max 40 punkti/inimene.
-* 3 liiget - max 30 punkti/inimene.
-* 4 liiget - max 20 punkti/inimene.
-
-**NB! Kui meeskonnas on rohkem kui üks liige, siis peab githubis selgelt välja tulema, kes millist osa tegi, et oleks võimalik hinnata iga meeskonnaliikme individuaalset panust.**
-
-README.md fail sisaldab:
-1. suurelt rakenduse nime;
-1. autorite nimesid;
-1. rakenduse funktsionaalsuse kirjeldust;
-1. ekraanitõmmist rakendusest.
-
-Rakenduse puhul peavad olema täidetud vähemalt järgmised nõuded:
-  * rakendus lahendab tõsist probleemi või on meelelahutusliku eesmärgiga; 
-  * rakenduse idee peab olema kooskõlastatud õppejõuga;
-  * responsive disain (kui tegemist pole ainult desktopile mõeldud mänguga);
-  * rakenduse javascripti osa on vähemalt 200 rida koodi ja koodi kordused peavad olema minimeeritud;
-  
-Teema ettepanekud:
- * Kuldvillak
- * Filmiinfo rakendus kasutades moviedatabase api-t - saab otsida filme, seriaale ja teha list enda vaadatud filmidest jne. 
- * Raamaturiiuli rakendus - Saab sisestada kodus olevad raamatud, märkida millised on loetud ja millised on pooleli. Moodustada lugemiseks eraldi liste ning märkida, mis leheküljel on raamat hetkel pooleli.
- * 
-
-Rakenduses võib kasutada teiste autorite koodi, aga see peab olema viidatud. Üle 50% koodist (javascript ja CSS) peab olema enda kirjutatud. Kasutada võib erinevaid API-sid ja võib kasutada erinevaid javascripti teeke (library).
-
-# Esitlus
-* Igale grupile on aega 15 minutit (6 minutit rakenduse esitlus, 6 minutit koodi esitlus, 3 minutit küsimused)
-* Esitama peavad grupiliikmed ühisel ajal. 
+Kasutatud allikad:
+https://medium.com/swlh/react-firebase-authentication-b68bd0f078a8
+https://www.w3schools.com/react/react_components.asp
+https://www.youtube.com/watch?v=4UZrsTqkcW4
+https://react-firebase-js.com/
