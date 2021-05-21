@@ -1,0 +1,8 @@
+image automaatne reso resize - vb ei tee kah
+about me - suvel
+gallerii eraldi lehele - suvel
+main pagele pildikarusell - suvel
+css - suvel
+login - lisa pilte nupp ainult saadaval sisse logitule - 21 mai
+modal - enne suve
+footer copyright - enne suve

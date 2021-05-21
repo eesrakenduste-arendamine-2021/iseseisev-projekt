@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&display=swap");
+
+body {
+  font-family: Libre Franklin;
+  color: black;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: lightgray;
+}
+.App {
+  margin: 0 auto;
+}
+
+.Header-middle {
+  display: flex;
+  margin: auto;
+  padding-top: 50px;
+  width: 100%;
+  display: inline-block;
+}
+
+.Header-left {
+  position: absolute;
+  width: 100%;
+}
+
+.Header h1 {
+  color: mediumslateblue;
+  font-size: 1.2rem;
+  letter-spacing: 5px;
+  font-weight: normal;
+  padding-left: 30px;
+}
+
+.Header img {
+  padding-top: 40px;
+  width: 150px;
+  height: 150px;
+}
+
+.Header h2,
+.Header p {
+  letter-spacing: 22px;
+  text-align: center;
+  padding-left: 300px;
+  padding-right: 300px;
+}
+.Header h2 {
+  font-size: 3rem;
+}
+form {
+  margin: 90px auto 10px;
+  text-align: center;
+}
+label input {
+  height: 0;
+  width: 0;
+}
+label {
+  letter-spacing: 2px;
+  font-size: 25px;
+  font-family: Libre Franklin;
+  border-style: solid;
+  border-color: black;
+  color: darkslateblue;
+  font-size: 35px;
+}
+label:hover {
+  border-style: solid;
+  border-color: black;
+  background-color: silver;
+  color: darkslateblue;
+}
+
+/* .App button {
+  letter-spacing: 2px;
+  font-size: 25px;
+  font-family: Libre Franklin;
+  border-style: solid;
+  border-color: black;
+  color: darkslateblue;
+  font-size: 35px;
+} */
+
+.output {
+  height: 60px;
+  font-size: 0.8rem;
+}
+.progress-bar {
+  height: 15px;
+  background-color: darkslateblue;
+  margin-top: 20px;
+}
+.img-grid {
+  column-count: 3;
+  column-width: 33%;
+  padding: 0 50px;
+}
+
+.img-grid img {
+  margin-bottom: 12px;
+}
+
+.img-wrap img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media only screen and (max-width: 1280px) {
+  form {
+    margin: 150px auto 10px;
+    text-align: center;
+  }
+
+  .Header h2 {
+    text-align: center;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  .Header p {
+    text-align: center;
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .Header-middle {
+    display: flex;
+    margin: auto;
+    padding-top: 0px;
+    width: 100%;
+    display: inline-block;
+  }
+  form {
+    margin: 100px auto 10px;
+    text-align: center;
+  }
+  .img-grid {
+    column-count: 1;
+    column-width: 80%;
+    padding: 0 50px;
+  }
+}
