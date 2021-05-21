@@ -11,3 +11,9 @@ Tegin React-ga gallerii portfoolio koos firebase andmebaasiga, fotograaf saab si
 ![image](https://user-images.githubusercontent.com/71014196/119161797-604aac80-ba62-11eb-9477-bb4cc8fbe581.png)
 ## mobiili vaade:
 ![image](https://user-images.githubusercontent.com/71014196/119161876-7193b900-ba62-11eb-8c07-eca80624b4e1.png)
+
+Kasutatud allikad:
+https://medium.com/swlh/react-firebase-authentication-b68bd0f078a8
+https://www.w3schools.com/react/react_components.asp
+https://www.youtube.com/watch?v=4UZrsTqkcW4
+https://react-firebase-js.com/
