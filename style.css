@@ -98,6 +98,17 @@ background: #5881aa;
   background-color: #75a4d1;
   border-bottom-color: #75a4d1;
 }
+.correct {
+  position:relative;
+  background-color: rgb(128, 182, 128);
+  right: -50px;
+}
+.wrong {
+  position:relative;
+  background-color: #d17575;
+  right: -70px;
+}
+
 .teamSelected{
   color: rgb(255, 241, 113);
 }
@@ -107,7 +118,7 @@ background: #5881aa;
   background-color:#ca5050;
   border-color:#d17575;
   width: 88px;
-  right: -340px;
+  right: -480px;
 }
 
 
