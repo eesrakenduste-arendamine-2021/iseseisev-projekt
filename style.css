@@ -8,7 +8,7 @@ body{
     display: grid;
     justify-content: center;
     align-items: center;
-    background: rgb(185, 244, 252);
+    background: #82b4e4;
     }
 .pagename{
   color:rgb(255, 241, 113);
@@ -18,19 +18,29 @@ body{
   left:36%;
 }
 h2{
-  color: black; 
-  background: black;
+  color:#5b89b4; 
+  background: #5b89b4;
   border-radius: 10px;
+  font-size: 30px;
 }
 h2:active{
   color:#000000;
   background: white;
 }
 h3{
-  font-size: 30px;
+  font-size: 35px;
+  color:#75a4d1;
+  position: relative;
+}
+h4:hover{
+  color: gray;
+}
+.break{
+  height: 5px;
 }
 p{
-  font-size: 20px;
+  font-size: 30px;
+  color:rgba(0, 0, 0, 0.7);
 }
 .vorm{
 position: relative;
@@ -51,7 +61,7 @@ display: grid;
 width: 160px;
 height: 96px;
 color: #fff;
-background: rgba(39, 17, 136, 0.5);
+background: #5b89b4;
 place-items: center;
 border: 1px solid rgba(0,0,0,.1);
 font-size:18px;
@@ -68,13 +78,37 @@ color: #fff;
 }
 
 .vorm span.quest{
-background: rgba(39, 17, 136, 0.6);
+background: #50769b;
 font-size: 20px;
 }
 .vorm span.quest:hover{
-background: rgba(39, 17, 136, 0.58);
+background: #5881aa;
+}
+.nupp{
+  border-radius: 5px;
+  font-size: 20px;
+}
+.nupp2{
+  border-radius: 5px;
+  font-size: 16px;
+  color:#f8f8f8;
+  width: 70px;
+  height: 25px;
+  border-color:#75a4d1;
+  background-color: #75a4d1;
+  border-bottom-color: #75a4d1;
+}
+.teamSelected{
+  color: rgb(255, 241, 113);
 }
 
+.closed{
+  position:relative;
+  background-color:#ca5050;
+  border-color:#d17575;
+  width: 88px;
+  right: -340px;
+}
 
 
 .modal {
@@ -96,8 +130,9 @@ background: rgba(39, 17, 136, 0.58);
   width: 50%;
   margin: 10% auto;
   padding: 20px;
-  border-radius: 25px;
+  border-radius: 20px;
 }
+
 .modal-input{
   border-radius: 5px;
   font-size: 12px;
@@ -111,6 +146,7 @@ background: rgba(39, 17, 136, 0.58);
 .modal-window.large {
   width: 50%;
 }
+.modalClosed{}
 
 .close {
   position: absolute;
@@ -141,16 +177,15 @@ background: rgba(39, 17, 136, 0.58);
 .plussminus{
   height: 25px;
   width: 25px;
+  border-radius: 15px;
+  background-color:#5a9fe0;
+  border-color:#b9d2ff;
 }
-#number1{
+
+.number2{
   text-align: center;
 }
-#number2{
-  text-align: center;
-}
-#number3{
-  text-align: center;
-}
+
 .author-container {
   display: flex;
   font-size: 20px;
