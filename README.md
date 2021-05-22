@@ -17,5 +17,7 @@ Rakenduse tööle saamiseks peab navigeerima "Extensions" lehele, aktiveerima "D
 ![fill](https://user-images.githubusercontent.com/25798556/118486209-03798a00-b722-11eb-89bc-5580bb114b2a.PNG)
 ![fille](https://user-images.githubusercontent.com/25798556/118486217-05dbe400-b722-11eb-9d4a-52917d27d21f.PNG)
 
+## Kasutatud materjal
+https://developer.chrome.com/docs/extensions/
 
 
