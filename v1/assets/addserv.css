@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Mono&display=swap');
+nav {
+    font-family: "Roboto Mono", Monospaced;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+    z-index: 2;
+}
+
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin-outside: 0 5px;
+    text-decoration: none;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.active, a:hover {
+    background: #1b9bff;
+    transition: .5s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    text-decoration: none;
+    font-family: "Roboto Mono", monospace;
+}
+.filter {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    opacity: .7;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(104,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.box {
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    height: 100%;
+    justify-content:center;
+    align-items: center;
+    padding: 10px;
+    left: 25%;
+}
+
+.container {
+    width: 50vw;
+    /*width: 100%;*/
+    background: #f9ebff;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+
+.container .title {
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+}
+/* pseudo */
+/*.container .title:before {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    left: 0;*/
+/*    bottom: 0;*/
+/*    height: 3px;*/
+/*    width: 30px;*/
+/*    background: #283335;*/
+/*}*/
+
+.container form .appData {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+form .appData .input {
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+
+.appData .input .details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.appData .input input {
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 15px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.appData .input input:focus,
+.appData .input input:valid {
+    border-color: #9b59b6;
+}
+
+form .teated .teateValik {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+form .teated .tellimus {
+    display: flex;
+    width: 40%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+
+.teated .tellimus label {
+    display: flex;
+}
+
+.teated .tellimus .dot {
+    height: 18px;
+    width: 18px;
+    background: #283335;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+#dot-1:checked ~ .tellimus label .one,
+#dot-2:checked ~ .tellimus label .two {
+    border-color: #283335;
+    background: #1b9bff;
+}
+
+form input[type="radio"] {
+    display: none;
+}
+
+form .button {
+    height: 45px;
+    margin: 45px 0;
+}
+
+form .button input {
+    justify-items: center;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(104,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+form .button input:hover {
+    background: linear-gradient(-90deg, rgba(2,0,36,1) 0%, rgba(104,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}

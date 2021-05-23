@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Mono&display=swap');
+
+
+nav {
+    font-family: "Roboto Mono", Monospaced;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin-outside: 0 5px;
+    text-decoration: none;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.active, a:hover {
+    background: #1b9bff;
+    transition: .5s;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    text-decoration: none;
+}
+
+.filter{
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    opacity: .7;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(104,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+table {
+
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 400px;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(32,32,32,.3);
+    /*height: 500px;*/
+    background: #fafafa;
+    text-align: center;
+}
+
+th,td {
+    padding: 12px 15px;
+
+}
+
+th {
+    background: #ba68c8;
+    color: #fafafa;
+    text-transform: uppercase;
+    font-family: 'Roboto Mono' , monospace;
+}
+
+td {
+    font-family: 'Open Sans', sans-serif;
+}
+
+tr:nth-child(odd) {
+    background: #eeeeee;
+}
+

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./assets/addserv.css" class="rel">
+    <script src="addserv.js" defer></script>
+    <title>Lisa teenuseid</title>
+</head>
+<body>
+<div class="head">
+<nav>
+    <label class="logo">Lisa teenuseid</label>
+    <ul>
+        <li><a href="table.html">Teenused</a></li>
+        <li><a class="active" href="addserv.html" >Lisa teenuseid</a></li>
+        <li><a href="index.html">Logi välja</a></li>
+    </ul>
+</nav>
+</div>
+<div class="filter">
+
+
+</div>
+<div class="box">
+<div class="container">
+    <div class="title">Uue teenuse andmed</div>
+    <form action="#">
+        <div class="appData">
+            <div class="input">
+                <span class="details">Teenuse nimi</span>
+                <input type="text" id="name" placeholder="Sisesta Nimi" required>
+            </div>
+            <div class="input">
+                <span class="details">Teenuse URL</span>
+                <input type="text" id="url" placeholder="Sisesta URL" required>
+            </div>
+            <div class="input">
+                <span class="details">Platvorm</span>
+                <input type="text" id="platform" placeholder="Sisesta PLatvorm" required>
+            </div>
+            <div class="input">
+                <span class="details">Versioon</span>
+                <input type="text" id="version" placeholder="Sisesta Versioon" required>
+            </div>
+            <div class="input">
+                <span class="details">Tegelik server</span>
+                <input type="text" id="actualServer" placeholder="Sisesta tegelik server" required>
+            </div>
+            <div class="input">
+                <span class="details">Asukoht serveris</span>
+                <input type="text" id="serverLocation" placeholder="Sisesta asukoht serveris" required>
+            </div>
+            <div class="input">
+                <span class="details">Tehniline kontakt</span>
+                <input type="text" id="techContact" placeholder="Sisesta isiku nimi" required>
+            </div>
+            <div class="input">
+                <span class="details">Tellija</span>
+                <input type="text" id="subscriber" placeholder="Sisesta isiku nimi" required>
+            </div>
+            <div class="input">
+                <span class="details">Kommentaarid</span>
+                <input type="text" id="comments" placeholder="Sisesta kommentaar">
+            </div>
+        </div>
+        <div class="teated">
+            <span class="teateValik">Teated</span>
+            <input type="radio" name="tellimus" id="dot-1">
+            <input type="radio" name="tellimus" id="dot-2">
+            <div class="tellimus">
+                <label for="dot-1">
+                    <span class="dot one"></span>
+                    <span class="valik">Soovin</span>
+                </label>
+                <label for="dot-2">
+                    <span class="dot two"></span>
+                    <span class="valik">Ei soovi</span>
+                </label>
+            </div>
+        </div>
+        <div class="button">
+            <div class="submit">
+                <input type="submit" id="addService" value="Lisa Teenus">
+            </div>
+            <div class="submit">
+                <input type="button" id="break" value="Katkesta" onclick="location.href='table.html'">
+            </div>
+        </div>
+
+    </form>
+</div>
+</div>
+</body>
+</html>
