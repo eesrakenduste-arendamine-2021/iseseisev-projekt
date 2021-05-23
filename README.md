@@ -1,52 +1,39 @@
-# iseseisev-projekt
+# Iseseisev projekt - Serveri haldus tarkvara (osa suvepraktika projektist)
 
-Tähtaeg - 1 päev enne esitlust. Esitluse kuupäevadeks: 1 nädal peale ÕISis valitud arvestuse kuupäeva (v.a arvatud järelarvestus, mis toimub õigel kuupäeval) - kindlasti tuleb arvestusele registreerida. Projektide esitlemine toimub:
-1. 14.05.2021 kell 10:15-12:15 zoomis
-Topic: Eesrakenduste arendamine arvestus
-Time: May 14, 2021 10:15 AM Helsinki
-
-Join Zoom Meeting
-https://us02web.zoom.us/j/84123937523?pwd=cDJSNVFhS1QxTmJIMko3blEvKzg0UT09
-
-Meeting ID: 841 2393 7523
-Passcode: 828751
-
-**Projektide lõpptähtaeg: 21.05.2021 - kogu kood pull requestina esitatud.**
-
-3. Järelarvestus - 04.06.2021 kell 10:15-11:45
+Autorid: Torm Erik Raudvee ja Margo Narõškin
 
 
+## Rakenduse tutvustus ja funktsionaalsused
 
-Eesrakenduste arendamise iseseisva projekti lähteülesanne. 
+Rakenduse eesmärk on koondada kõik TLÜ hallatavad teenused ühte kohta kokku, et neid oleks parem vajdusel uuendada vms.
 
-Töö võib teha teha 1-4 liikmelise meeskonnana. Punkte jaotatakse vastavalt sellele, mitu liiget on meeskonnas:
-* 1 liige - max 70 punkti/inimene.
-* 2 liiget - max 40 punkti/inimene.
-* 3 liiget - max 30 punkti/inimene.
-* 4 liiget - max 20 punkti/inimene.
+Rakendus on kirjutatud Vue ja typescript-iga kuna peame seda kasutama ka oma suvepraktika projektis. Koodi kirjutamisega alustades arvasime, et teeme rakenduse ikkagi HTML, CSS ja tavalise js-iga, sest me polnud veel Vue-ga tuttavad. Hiljem otsustasime ikkagi veidi Vue-d õppida ja sellega teha oma rakendus, sest siis on meil ka suvel kergem. Kuna jõudsime oma algse versiooniga HTML ja CSS ära kirjutada, siis otsustasime ka selle üles laadida. Esialgsest versioonist on näha siis meie algset visiooni.
 
-**NB! Kui meeskonnas on rohkem kui üks liige, siis peab githubis selgelt välja tulema, kes millist osa tegi, et oleks võimalik hinnata iga meeskonnaliikme individuaalset panust.**
+* Rakendus näitab nimekirja teenustest
+* Lisa teenuseid lehel peaks saama lisada uusi teenuseid (andmeid hetkel kusagile ei saada kuna vajab back end-i)
+* Teenuste lisamisel on vaja täita vorm, väljade täitmine on lisamiseks kohustuslik
+* Valik teadete tellimiseks
+* 
+ 
+## Tööjaotus
 
-README.md fail sisaldab:
-1. suurelt rakenduse nime;
-1. autorite nimesid;
-1. rakenduse funktsionaalsuse kirjeldust;
-1. ekraanitõmmist rakendusest.
+Algsel versioonil Torm tegi Navigatisooni riba, tabeli ja sisse logimise lehe ning Margo teenuste lisamise vormi ja tabeli andmed JSON-iga. CSS sai kirjutatud mitme päeva vältel, kus üks või teine tegi mõningaid muudatusi või leidis mõne hea lahenduse. Hiljem uut versiooni tegema hakates oli tööjaotus üsna sama. Vaatasime Vue tutorialeid ja kirjutasime Visual Studio Code Live Share abil koos koodi olles samal ajal Discordi kõnes, et üht või teist asja läbi arutada.
 
-Rakenduse puhul peavad olema täidetud vähemalt järgmised nõuded:
-  * rakendus lahendab tõsist probleemi või on meelelahutusliku eesmärgiga; 
-  * rakenduse idee peab olema kooskõlastatud õppejõuga;
-  * responsive disain (kui tegemist pole ainult desktopile mõeldud mänguga);
-  * rakenduse javascripti osa on vähemalt 200 rida koodi ja koodi kordused peavad olema minimeeritud;
-  
-Teema ettepanekud:
- * Kuldvillak
- * Filmiinfo rakendus kasutades moviedatabase api-t - saab otsida filme, seriaale ja teha list enda vaadatud filmidest jne. 
- * Raamaturiiuli rakendus - Saab sisestada kodus olevad raamatud, märkida millised on loetud ja millised on pooleli. Moodustada lugemiseks eraldi liste ning märkida, mis leheküljel on raamat hetkel pooleli.
- * 
+## Rakenduse ekraanipildid
 
-Rakenduses võib kasutada teiste autorite koodi, aga see peab olema viidatud. Üle 50% koodist (javascript ja CSS) peab olema enda kirjutatud. Kasutada võib erinevaid API-sid ja võib kasutada erinevaid javascripti teeke (library).
+## Kasutatud allikad
 
-# Esitlus
-* Igale grupile on aega 15 minutit (6 minutit rakenduse esitlus, 6 minutit koodi esitlus, 3 minutit küsimused)
-* Esitama peavad grupiliikmed ühisel ajal. 
+* Vue tutorial - https://www.youtube.com/watch?v=78tNYZUS-ps
+* Lisaks vaatasime palju teisi erinevaid YouTube tutorialeid
+* Kindlasti saime palju abi ka w3schools ja stackoverflow foorumitest
+
+1 Versiooni pildid: 
+![Screenshot 2021-05-23 221628](https://user-images.githubusercontent.com/71014202/119274237-9715f380-bc17-11eb-9c41-101d91a80dc5.png)
+![Screenshot 2021-05-23 221657](https://user-images.githubusercontent.com/71014202/119274240-97ae8a00-bc17-11eb-9af0-3abe2de42eb2.png)
+![Screenshot 2021-05-23 221741](https://user-images.githubusercontent.com/71014202/119274241-97ae8a00-bc17-11eb-910e-aaad7967987e.png)
+![Screenshot 2021-05-23 221539](https://user-images.githubusercontent.com/71014202/119274242-98472080-bc17-11eb-899a-a37cf465458b.png)
+
+2 Versiooni pildid
+![Screenshot 2021-05-23 222036](https://user-images.githubusercontent.com/71014202/119274265-ab59f080-bc17-11eb-9aaa-6ba634000a85.png)
+![Screenshot 2021-05-23 222132](https://user-images.githubusercontent.com/71014202/119274266-abf28700-bc17-11eb-8585-64b183f7bf33.png)
+
