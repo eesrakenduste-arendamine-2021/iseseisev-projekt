@@ -1,0 +1,57 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white;
+}
+
+.optionsContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    box-sizing: border-box;
+    box-shadow: 0 10px 20px rgba(27, 27, 27, 0.877);
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.575);
+}
+
+.optionsContainer h2 {
+    text-align: center;
+}
+
+.optionsContainer .options input {
+    color: white;
+    width: 100%;
+    padding: 7px 0%;
+    font-size: 16px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+}
+
+input:focus {
+    outline: none;
+}
+
+.savebtn {
+    text-align: center;
+}
+
+#save {
+    cursor: pointer;
+    background-color: #2c5764;
+    border: 1px solid turquoise;
+    border-radius: 10px;
+    color: white;
+    width: 100px;
+    height: 35px;
+}
