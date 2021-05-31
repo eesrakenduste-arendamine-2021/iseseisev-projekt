@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+	<meta charset="utf-8">
+	<title>Tähestiku mäng</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="game.js" defer></script>
+</head>
+<body>
+	<main>
+		<section id="game_section">
+			<div id="canvas_and_top10_container" class="canvas_and_top10_container">
+				<canvas id="canvas" width="960" height="540"></canvas>
+				<div id="top_10_page" class="top_10_page">
+					<p id="close_top_10_button">X</p>
+					<h2>TOP 10 punktiskoor (<span id="qty_of_played_balls">10</span> palli mängus)</h2>
+					<div id="top_list_content" class="top_list_content"></div>
+				</div>
+			</div>
+			
+			<div id="settings_and_info_container" class="settings_and_info_container">
+				<div id="game_settings_container" class="game_settings_container">
+					<h3>Seaded</h3>
+					<hr>
+					<label for="ball_quantity">
+						<input id="ball_quantity" class="ball_quantity" type="number" min="3" max="32" value="10" onkeydown="return false">Pallide algkogus
+					</label>
+					<br>
+					<label for="color_the_balls"><input id="color_the_balls" type="checkbox">Erivärvilised pallid</label>
+					<br>
+					<label for="background_music"><input id="background_music" type="checkbox">Taustamuusika</label>
+					<input id="volume_slider" type="range" min="0" max="1" value="0.5" step="0.01">
+				</div>
+
+				<div id="game_info_container" class="game_info_container">
+					<h3>Skoor</h3>
+					<hr>
+					<p>Õigeid tabamusi: <span id="correct_hits_field"></span></p>
+					<p>Valesid tabamusi: <span id="wrong_hits_field"></span></p>
+					<p>Mööda läinud: <span id="missed_hits_field"></span></p>
+					<p>Punktisumma: <span id="game_score"></span></p>
+				</div>
+
+				<div id="player_name_container" class="player_name_container">
+					<h3>Mängija nimi</h3>
+					<hr>
+					<label for="player_name"><input type="text" id="player_name"></label>
+				</div>
+
+				<div id="button_container" class="button_container">
+					<button id="start_game_button" type="button">Alusta</button>
+					<button id="end_game_button" class="end_game_button" type="button">Lõpeta</button>
+					<button id="top_10_list_button" type="button">Top10</button>
+				</div>
+			</div>
+		</section>
+	</main>
+</body>
+</html>

@@ -1,0 +1,164 @@
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-color: #C5CBE3;
+	color: #000000;
+	font-family: verdana;
+}
+
+h3, h2 {
+	color: #222222;
+	text-align: center;
+}
+
+h2 {
+	margin-top: 20px;
+}
+
+section {
+	background-color: rgba(255,255,255,.5);
+	background-image: url("./decorations/upper_left.png"),
+		url("./decorations/upper_right.png"),
+		url("./decorations/down_left.png"),
+		url("./decorations/down_right.png");
+	background-repeat: no-repeat;
+	background-size: 40px;
+	background-position: top left, top right, bottom left, bottom right;
+	border-radius: 5px;
+	border: 5px groove #dadff5;
+	max-width: 100%;
+	min-width: 1020px;
+	height: 90vh;
+	margin: 20px;
+	padding: 20px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+canvas {
+	background-color: white;
+	border: 1px solid #444444;
+	box-shadow: 0px 0px 8px 8px rgba(80, 80, 80, 0.3);
+	margin: 10px 20px 10px 10px;
+}
+
+.top_10_page {
+	width: 960px;
+	height: 540px;
+	margin: 10px 20px 10px 10px;
+	border: 1px solid #444444;
+	box-shadow: 0px 0px 8px 8px rgba(80, 80, 80, 0.3);
+	background-color: white;
+	display: none;
+	padding: 15px;
+}
+
+.top_10_page>p {
+	font-weight: 800;
+	font-size: larger;
+	display: flex;
+	justify-content: flex-end;
+	line-height: 20px;
+}
+
+.top_10_page>p:hover {
+	cursor: pointer;
+	font-size: x-large;
+}
+
+.top_list_content {
+	margin-top: 20px;
+}
+
+.top_list_content>div {
+	border: 1px solid #8a8585;
+	display: inline-block;
+	width: 33%;
+	text-align: center;
+	line-height: 20px;
+}
+
+.top_list_content>div:nth-of-type(1), .top_list_content>div:nth-of-type(2), .top_list_content>div:nth-of-type(3) {
+	background-color: rgb(204, 209, 230);
+	font-weight: 600;
+}
+
+.top_list_content>p {
+	text-align: center;
+}
+
+.settings_and_info_container{
+	height: 540px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.settings_and_info_container * {
+	margin: 5px;
+}
+
+.game_settings_container, .game_info_container, .button_container, .player_name_container {
+	width: 240px;
+	box-shadow: 0px 0px 8px 8px rgba(80, 80, 80, 0.3);
+	background-color: #e2e5f1;
+	border: 1px solid #444444;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.button_container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.ball_quantity {
+	width: 35px;
+}
+
+button {
+	padding: 10px;
+	border-color: rgba(80, 80, 80, 0.4);
+	border-radius: 10px;
+	background-color: #FAFAFA;
+	font-weight: 600;
+	width: 70px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #C5CBE3;
+}
+
+.end_game_button {
+	display: none;
+}
+
+[type="checkbox"]:hover, [type="range"]:hover {
+	cursor: pointer;
+}
+
+[type="range"] {
+	margin-left: 10px;
+}
+
+[type="text"] {
+	padding: 5px;
+	margin-left: 15px;
+}
+
+@media screen and (max-width: 1340px){
+	.settings_and_info_container{
+		width: 950px;
+		height: 190px;
+		flex-direction: row;
+	}
+}
