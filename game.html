@@ -13,8 +13,8 @@
 			<div id="canvas_and_top10_container" class="canvas_and_top10_container">
 				<canvas id="canvas" width="960" height="540"></canvas>
 				<div id="top_10_page" class="top_10_page">
-					<p id="close_top_10_button">X</p>
-					<h2>TOP 10 punktiskoor (<span id="qty_of_played_balls">10</span> palli mängus)</h2>
+					<p id="close_top_10_button" class="close_top_10_button">X</p>
+					<h2>TOP 10 punktiskoor (pallide algkogus: <span id="qty_of_played_balls">10</span>)</h2>
 					<div id="top_list_content" class="top_list_content"></div>
 				</div>
 			</div>
@@ -23,8 +23,8 @@
 				<div id="game_settings_container" class="game_settings_container">
 					<h3>Seaded</h3>
 					<hr>
-					<label for="ball_quantity">
-						<input id="ball_quantity" class="ball_quantity" type="number" min="3" max="32" value="10" onkeydown="return false">Pallide algkogus
+					<label for="starting_ball_quantity">
+						<input id="starting_ball_quantity" class="starting_ball_quantity" type="number" min="3" max="32" value="10" onkeydown="return false">Pallide algkogus
 					</label>
 					<br>
 					<label for="color_the_balls"><input id="color_the_balls" type="checkbox">Erivärvilised pallid</label>
@@ -45,7 +45,10 @@
 				<div id="player_name_container" class="player_name_container">
 					<h3>Mängija nimi</h3>
 					<hr>
-					<label for="player_name"><input type="text" id="player_name"></label>
+					<div class="field_to_center">
+						<label for="player_name"><input type="text" id="player_name"></label>
+					</div>
+					
 				</div>
 
 				<div id="button_container" class="button_container">

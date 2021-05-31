@@ -10,13 +10,15 @@ body {
 	font-family: verdana;
 }
 
-h3, h2 {
+h3 {
 	color: #222222;
 	text-align: center;
 }
 
 h2 {
+	color: rgb(60, 17, 104);
 	margin-top: 20px;
+	text-align: center;
 }
 
 section {
@@ -60,15 +62,16 @@ canvas {
 	padding: 15px;
 }
 
-.top_10_page>p {
+.close_top_10_button {
 	font-weight: 800;
 	font-size: larger;
 	display: flex;
 	justify-content: flex-end;
 	line-height: 20px;
+	color: rgb(60, 17, 104);
 }
 
-.top_10_page>p:hover {
+.close_top_10_button:hover {
 	cursor: pointer;
 	font-size: x-large;
 }
@@ -94,6 +97,12 @@ canvas {
 	text-align: center;
 }
 
+.top_list_content img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .settings_and_info_container{
 	height: 540px;
 	display: flex;
@@ -114,13 +123,13 @@ canvas {
 	padding: 5px;
 }
 
-.button_container {
+.button_container, .field_to_center {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-.ball_quantity {
+.starting_ball_quantity {
 	width: 35px;
 }
 
@@ -152,7 +161,6 @@ button:hover {
 
 [type="text"] {
 	padding: 5px;
-	margin-left: 15px;
 }
 
 @media screen and (max-width: 1340px){

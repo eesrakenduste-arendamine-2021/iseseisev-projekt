@@ -20,6 +20,8 @@ let player_name_field = document.getElementById("player_name");
 let high_score_list = JSON.parse(localStorage.getItem('alphabet_top_score')) || [];
 let top_10_page = document.getElementById("top_10_page");
 let top_nr = 1;
+let ball_quantity_field = document.getElementById("starting_ball_quantity");
+let top_list_content = document.getElementById("top_list_content");
 
 window.onload = function(){
 	canvas = document.getElementById("canvas");
@@ -28,7 +30,7 @@ window.onload = function(){
 	document.getElementById("background_music").addEventListener("change", prepare_music_player);
 	document.getElementById("volume_slider").addEventListener("input", set_volume);
 	document.getElementById("color_the_balls").addEventListener("change", change_ball_color);
-	document.getElementById("top_10_list_button").addEventListener("click", display_top_list);
+	document.getElementById("top_10_list_button").addEventListener("click", display_top_list_page);
 	start_game.addEventListener("click", init_game);
 }
 
@@ -50,9 +52,9 @@ function get_player_name(){
 }
 
 function init_game(){
-	close_top_list();
+	close_top_list_page();
 	get_player_name();
-	elements_limit = document.getElementById("ball_quantity").value;
+	elements_limit = document.getElementById("starting_ball_quantity").value;
 	end_game.style.display = "inline-block";
 	end_game.addEventListener("click", end_current_game);
 	show_score();
@@ -213,20 +215,23 @@ function save_game_score(){
 	localStorage.setItem("alphabet_top_score", JSON.stringify(high_score_list));
 }
 
-
-function display_top_list(){
-	document.getElementById("close_top_10_button").addEventListener("click", close_top_list);
-	let qty_of_played_balls = document.getElementById("ball_quantity").value;
-	document.getElementById("qty_of_played_balls").innerHTML = qty_of_played_balls;
-	document.getElementById("canvas").style.display = "none";
+function display_top_list_page(){
+	document.getElementById("close_top_10_button").addEventListener("click", close_top_list_page);
+	ball_quantity_field.addEventListener("change", display_top_10);
+	canvas.style.display = "none";
 	top_10_page.style.display = "block";
-	let top_list_content = document.getElementById("top_list_content");
+	display_top_10();
+}
+
+function display_top_10(){
+	let played_balls = ball_quantity_field.value;
+	document.getElementById("qty_of_played_balls").innerHTML = played_balls;
 	top_list_content.innerHTML = "";
 	let has_results = 0;
-
 	top_list_content.innerHTML += "<div>" + "Koht:" + "</div>" + "<div>" + "Mängija nimi:" + "</div>" + "<div>" + "Punktiskoor" + "</div>" + "<br>";
+
 	for(let i = 0; i < high_score_list.length; i++){
-		if(high_score_list[i].letters == qty_of_played_balls){
+		if(high_score_list[i].letters == played_balls){
 			top_list_content.innerHTML += "<div>" + top_nr + "</div>" + "<div>" + high_score_list[i].name + "</div>" + "<div>" + high_score_list[i].score + "</div>" + "<br>";
 			top_nr++;
 			has_results = 1;
@@ -235,16 +240,28 @@ function display_top_list(){
 			}
 		}
 	}
+
 	if(!has_results){
-		top_list_content.innerHTML = "<p>" + "Ei ole tulemusi!" + "</p>";
+		display_no_results_note();
 	}
 	top_nr = 1;
 }
 
-function close_top_list(){
-	document.getElementById("close_top_10_button").removeEventListener("click", close_top_list);
+function display_no_results_note(){
+	top_list_content.innerHTML = "<p>" + "Ei ole tulemusi!" + "</p>" + "<br>";
+	let not_found_img = new Image();
+
+	not_found_img.onload = function(){
+		top_list_content.innerHTML += '<img src="' + not_found_img.src + '" />';
+	};
+	not_found_img.src = "./decorations/not_found.jpg";
+}
+
+function close_top_list_page(){
+	document.getElementById("close_top_10_button").removeEventListener("click", close_top_list_page);
+	ball_quantity_field.removeEventListener("change", display_top_10);
 	top_10_page.style.display = "none";
-	document.getElementById("canvas").style.display = "block";
+	canvas.style.display = "block";
 }
 
 
