@@ -1,52 +1,41 @@
-# iseseisev-projekt
-
-Tähtaeg - 1 päev enne esitlust. Esitluse kuupäevadeks: 1 nädal peale ÕISis valitud arvestuse kuupäeva (v.a arvatud järelarvestus, mis toimub õigel kuupäeval) - kindlasti tuleb arvestusele registreerida. Projektide esitlemine toimub:
-1. 14.05.2021 kell 10:15-12:15 zoomis
-Topic: Eesrakenduste arendamine arvestus
-Time: May 14, 2021 10:15 AM Helsinki
-
-Join Zoom Meeting
-https://us02web.zoom.us/j/84123937523?pwd=cDJSNVFhS1QxTmJIMko3blEvKzg0UT09
-
-Meeting ID: 841 2393 7523
-Passcode: 828751
-
-**Projektide lõpptähtaeg: 21.05.2021 - kogu kood pull requestina esitatud.**
-
-3. Järelarvestus - 04.06.2021 kell 10:15-11:45
-
-
-
-Eesrakenduste arendamise iseseisva projekti lähteülesanne. 
-
-Töö võib teha teha 1-4 liikmelise meeskonnana. Punkte jaotatakse vastavalt sellele, mitu liiget on meeskonnas:
-* 1 liige - max 70 punkti/inimene.
-* 2 liiget - max 40 punkti/inimene.
-* 3 liiget - max 30 punkti/inimene.
-* 4 liiget - max 20 punkti/inimene.
-
-**NB! Kui meeskonnas on rohkem kui üks liige, siis peab githubis selgelt välja tulema, kes millist osa tegi, et oleks võimalik hinnata iga meeskonnaliikme individuaalset panust.**
-
-README.md fail sisaldab:
-1. suurelt rakenduse nime;
-1. autorite nimesid;
-1. rakenduse funktsionaalsuse kirjeldust;
-1. ekraanitõmmist rakendusest.
-
-Rakenduse puhul peavad olema täidetud vähemalt järgmised nõuded:
-  * rakendus lahendab tõsist probleemi või on meelelahutusliku eesmärgiga; 
-  * rakenduse idee peab olema kooskõlastatud õppejõuga;
-  * responsive disain (kui tegemist pole ainult desktopile mõeldud mänguga);
-  * rakenduse javascripti osa on vähemalt 200 rida koodi ja koodi kordused peavad olema minimeeritud;
+# Iseseisev töö  - Tähestiku mäng
+Kella veebileht: http://www.tlu.ee/~annelip8/Mang/game.html    
+Autor: Anneli Põldaru  
   
-Teema ettepanekud:
- * Kuldvillak
- * Filmiinfo rakendus kasutades moviedatabase api-t - saab otsida filme, seriaale ja teha list enda vaadatud filmidest jne. 
- * Raamaturiiuli rakendus - Saab sisestada kodus olevad raamatud, märkida millised on loetud ja millised on pooleli. Moodustada lugemiseks eraldi liste ning märkida, mis leheküljel on raamat hetkel pooleli.
- * 
+Võtsin põhjana kasutusse: http://greeny.cs.tlu.ee/~rinde/2021/veeb_ja_meedia/veeb_ja_meedia_valik/tund_13/game.html  
+Tegin mõningad muudatused. Täiendasin nii kujunduse osa, kui lisasin uusi funktsionaalsusi. 
+  
+## Funktsionaalsused:
+### Seadistus:
+* Saab määrata pallide algkoguse 3-32 tükki (et ei oleks liiga lihtne ja samas ei ületaks tähestiku massiivis olevate tähtede arvu).  
+* Valida, kas mängida eri- või ühevärviliste pallikestega. Tehtud valikut saab ka keset mängu muuta!  
+* Valida, kas kuulata taustamuusikat või mitte. Tehtud valikut saab ka keset mängu muuta.   
+* Määrata liuguriga taustamuusika helitugevust.  
 
-Rakenduses võib kasutada teiste autorite koodi, aga see peab olema viidatud. Üle 50% koodist (javascript ja CSS) peab olema enda kirjutatud. Kasutada võib erinevaid API-sid ja võib kasutada erinevaid javascripti teeke (library).
+### Punktiskoor ja TOP 10:
+* Kuvatakse ka tabamuste skoori (õigeid, valesid ja täitsa mööda läinud tabamuste arvu). See info uueneb jooksvalt.  
+* Mängu ajal arvutatakse kokku punktiskoor: õige tabamus annab +10 punkti, vale tabamus -3 punkti ja mööda läinud tabamus -2 punkti.
+* Mängijal on võimalus lisada oma nimi. Kui aga nime väli jääb tühjaks, registreeritakse mängijaks "anonüümne mängija".
+* Punktiskoor, pallide kogus ja nimi salvestatakse local Storagesse.
+* `Top10` nupul klikates kuvatakse ka top10 tulemusi, mis on tehtud just selle pallide arvuga, mis on hetkel ka `Pallide algkogus` väljal kirjas.
 
-# Esitlus
-* Igale grupile on aega 15 minutit (6 minutit rakenduse esitlus, 6 minutit koodi esitlus, 3 minutit küsimused)
-* Esitama peavad grupiliikmed ühisel ajal. 
+### Taustal toimuv:
+* Kõik mängus kasutusel olevad algväärtused nullitakse iga uue mängu alguses.  
+* Mängu saab pausile panna. Juhul, kui mängija kuulas parasjagu ka taustamuusikat siis pannakse ka muusika pausile. Ning pausi lõpetamisel jätkavad pallid oma teekonda ning muusika (kui taustamuusika on parasjagu lubatud) jätkab mängimist. Pausi ajal ei kuulata kanvaa peal tehtavaid klikke.  
+* Mängu ajal on näha muidu peidus olev `Lõpeta` nupp. Mängija saab vajadusel mängu katkestada.  
+* Mängu loomuliku lõpu korral või katkestamise tulemusena läheb `Lõpeta` nupp taaskord peitu.  
+* Mängjale on (kuniks ta ei ole uut mängu alustanud) näha tabamuste skoorid. Ja kanvaa peale on siis "joonistatud" mängu lõppu sümboliseeriv pilt.  
+  
+## Kuvatõmmised
+Enne alustamist:  
+![Enne alustamist](screenshots/alguses.jpg)  
+Mängu ajal:  
+![Mängu ajal](screenshots/mängu_ajal.jpg)  
+Mängu lõpus:  
+![Mängu lõpus](screenshots/lõpp.jpg)  
+Top10:  
+![Top 10](screenshots/skoor_3.jpg)  
+Top10, kui tulemusi ei ole:  
+![Top10, kui tulemusi ei ole](screenshots/skoor_2.jpg)   
+Veidi kitsama läpaka ekraanil:  
+![Kitsamal ekraanil](screenshots/kitsal.jpg)  
