@@ -1,5 +1,5 @@
 # Iseseisev töö  - Tähestiku mäng
-Kella veebileht: http://www.tlu.ee/~annelip8/Mang/game.html    
+Veebileht: http://www.tlu.ee/~annelip8/Mang/game.html    
 Autor: Anneli Põldaru  
   
 Võtsin põhjana kasutusse: http://greeny.cs.tlu.ee/~rinde/2021/veeb_ja_meedia/veeb_ja_meedia_valik/tund_13/game.html  
