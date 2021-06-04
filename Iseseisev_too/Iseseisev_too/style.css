@@ -1,0 +1,41 @@
+
+.container {
+    width: 800px;
+    margin: auto;
+    font-family: Copperplate, Papyrus, fantasy;
+    color: rgb(73, 12, 12);
+}
+.intro {
+    text-align: center;
+}
+.recipes {
+    display: flex;
+    flex-direction: column;
+}
+.recipe {
+    display: flex;
+    flex-direction: row;
+}
+
+.recipe:hover {
+    background: palevioletred;
+    cursor: pointer;
+}
+.recipe.add-recipe {
+    order: 2;
+}
+.modal {
+    padding-top: 30px!important;
+}
+.modal input, .modal textarea {
+    width: 100%;
+    margin-bottom: 15px;
+}
+#preview {
+    max-width: 100%;
+    max-height: 80px;
+}
+.tagsinput {
+    margin-bottom: 20px;
+}
+
