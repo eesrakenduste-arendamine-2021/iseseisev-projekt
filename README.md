@@ -28,3 +28,4 @@ https://www.tutorialrepublic.com/faq/how-to-dynamically-access-object-property-u
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
 
 https://api.jquery.com/removeAttr/
+
