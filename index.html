@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reptseptirakendus</title>
+    <link rel="stylesheet" href="style.css?ver=1">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+    <script src="jquery.tagsinput.min.js"></script>
+    <link rel="stylesheet" href="jquery.tagsinput.min.css">
+
+    <script src="script.js"></script>
+</head>
+<body>
+<div class="container">
+   <div class="intro">
+       <h1>Retseptirakendus</h1>
+       <p>Siin saab hoida oma retsepte</p>
+       <p>Autor: Mirjam Laanejõe</p>
+   </div>
+    <div class="recipes" id="recipes">
+        <a class="recipe add-recipe" href="#edit" rel="modal:open">
+            <img src="img/plus.png">
+            <h3>Lisa uus</h3>
+        </a>
+    </div>
+
+    <div id="view" class="modal">
+            <h3 id="recipeName"></h3>
+            <p>Koostisosad</p>
+            <ul id="recipeIngredients"></ul>
+            <p>Valmistamine</p>
+            <p id="recipeMethod"></p>
+            <a id="editRecipe" href="#edit" rel="modal:open">Muuda</a>
+            <a href="#" id="deleteRecipe" rel="modal:close">Kustuta</a>
+    </div>
+
+    <div id="edit" class="modal">
+        <form>
+            <input placeholder="Retsepti nimi" id="name" />
+
+
+            <label for="ingredients">Koostisosad</label>
+            <input name="ingredients" id="ingredients"/>
+            <label for="method">Valmistusviis</label>
+
+            <textarea id="method" placeholder="Valmistamise juhend"></textarea>
+
+        </form>
+        <a href="#" id="save" rel="modal:close">Salvesta</a>
+    </div>
+
+</div>
+</body>
+</html>

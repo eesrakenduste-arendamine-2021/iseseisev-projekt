@@ -1,0 +1,59 @@
+@font-face {
+    font-family: papyrus;
+    src: url(papyrus.ttf);
+  }
+
+
+body {
+    color: rgb(54, 18, 214);
+    
+    background-color: pink;
+}
+    
+
+body, input, label {
+    font-family: papyrus;
+}
+.container {
+    width: 1000px;
+    margin: auto;
+    color: #6e74b3;
+}
+.intro {
+    text-align: center;
+}
+.recipes {
+    display: flex;
+    flex-direction: column;
+}
+.recipe {
+    display: flex;
+    flex-direction: row;
+}
+.recipe img {
+    max-height: 50px;
+    margin-right: 20px;
+}
+
+.recipe:hover {
+    background: rgb(16, 17, 17);
+    cursor: pointer;
+}
+.recipe.add-recipe {
+    order: 2;
+}
+.modal {
+    padding-top: 30px!important;
+}
+.modal input, .modal textarea {
+    width: 100%;
+    margin-bottom: 15px;
+}
+#preview {
+    max-width: 100%;
+    max-height: 80px;
+}
+.tagsinput {
+    margin-bottom: 20px;
+}
+
